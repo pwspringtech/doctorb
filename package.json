@@ -1,0 +1,45 @@
+{
+  "name": "toddberland",
+  "version": "1.0.0",
+  "description": "Dr. Todd Berland's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/webpack/bin/webpack.js",
+    "webpack": "webpack",
+    "webpack:dev": "npm run webpack -- --mode=development --watch",
+    "start:dev": "npm run webpack:dev & nodemon index.js --ignore /client --ignore /public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prechapl/toddberland.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prechapl/toddberland/issues"
+  },
+  "homepage": "https://github.com/prechapl/toddberland#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "node": "^11.15.0",
+    "pg": "^7.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sequelize": "^5.12.3",
+    "volleyball": "^1.5.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
