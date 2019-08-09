@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { Container, Col, Image, Row } from 'react-bootstrap';
-// import portrait from '../public/toddberland.jpg';
 
 class Home extends Component {
   render() {
     return (
       <Container className="d-flex flex-column">
-        <Row className="justify-content-center">
+        <Row className="justify-content-center p-2">
           <h3>VASCULAR SPECIALIST</h3>
         </Row>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center pb-4">
           <h5>
             Todd Berland, M.D. is a world renowned vascular surgeon in the heart
             of New York City
@@ -17,10 +16,14 @@ class Home extends Component {
         </Row>
 
         <Row>
-          <Col>
-            <Image src="../public/toddberland.jpg" className="img-fluid" />
+          <Col xs lg="4">
+            <Image
+              className="border shadow p-3 mb-5 bg-white rounded"
+              src="/toddberland-500px.jpg"
+              fluid
+            />
           </Col>
-          <Col>
+          <Col xs lg="8">
             <p style={{ textIndent: '40px' }} className="lead">
               Dr. Berland is a world renowned vascular surgeon based in New York
               City. He is listed in Castle Connolly “America’s Top Doctors” for
