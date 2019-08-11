@@ -5,26 +5,16 @@ class Home extends Component {
   render() {
     return (
       <Container className="d-flex flex-column">
-        <Row className="justify-content-center p-2">
-          <h3>VASCULAR SPECIALIST</h3>
-        </Row>
-        <Row className="justify-content-center pb-4">
-          <h5>
-            Todd Berland, M.D. is a world renowned vascular surgeon in the heart
-            of New York City
-          </h5>
-        </Row>
-
-        <Row>
-          <Col xs lg="6">
+        <Row className="pt-5 mt-5">
+          <Col lg="true">
             <Image
-              className="border shadow p-3 bg-white rounded"
+              className="border shadow p-2 bg-white rounded"
               src="/toddberland-500px.jpg"
               fluid
             />
           </Col>
-          <Col xs lg="6">
-            <p style={{ textIndent: '40px' }} className="lead">
+          <Col xs lg="true">
+            <p style={{ textIndent: '40px', marginLeft: 20 }} className="lead">
               Dr. Berland is a world renowned vascular surgeon based in New York
               City. He is listed in Castle Connolly “America’s Top Doctors” for
               2019 and has been a member of Alpha Omega Alpha, America’s top
@@ -34,7 +24,7 @@ class Home extends Component {
               Show” on Sirius/XM‘s Doctor Radio (Channel 110), which airs live
               bi-weekly on Fridays from 6-8am.
             </p>
-            <p style={{ textIndent: '40px' }} className="lead">
+            <p style={{ textIndent: '40px', marginLeft: 20 }} className="lead">
               Dr. Berland obtained his degree from the Medical College of
               Georgia in 2003 and completed his General Surgery residency at
               Mayo Clinic in 2008, where, as Chief Resident, he was awarded a
@@ -51,23 +41,33 @@ class Home extends Component {
             </p>
           </Col>
         </Row>
-        <Row>
-          <ResponsiveEmbed
-            aspect="16by9"
-            style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}
-          >
-            <embed
-              type="video/mp4"
-              src="/Todd-Berland-MD.mp4"
+        <Row xs lg="true" className="mt-4 justify-content-center">
+          <Col xs lg="2" />
+          <Col xs lg="true">
+            <ResponsiveEmbed
+              aspect="16by9"
               style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                maxWidth: '100%',
-                maxHeight: '100%'
+                position: 'relative',
+                paddingBottom: '56.25%',
+                height: 0,
+                marginLeft: 'auto',
+                marginRight: 'auto'
               }}
-            />
-          </ResponsiveEmbed>
+            >
+              <embed
+                type="video/mp4"
+                src="/Todd-Berland-MD.mp4"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  maxWidth: '80%',
+                  maxHeight: '80%'
+                }}
+              />
+            </ResponsiveEmbed>
+          </Col>
+          <Col xs lg="1" />
         </Row>
       </Container>
     );
