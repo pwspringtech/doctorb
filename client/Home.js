@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Col, Image, Row } from 'react-bootstrap';
+import { Container, Col, Image, ResponsiveEmbed, Row } from 'react-bootstrap';
 
 class Home extends Component {
   render() {
@@ -16,14 +16,14 @@ class Home extends Component {
         </Row>
 
         <Row>
-          <Col xs lg="4">
+          <Col xs lg="6">
             <Image
-              className="border shadow p-3 mb-5 bg-white rounded"
+              className="border shadow p-3 bg-white rounded"
               src="/toddberland-500px.jpg"
               fluid
             />
           </Col>
-          <Col xs lg="8">
+          <Col xs lg="6">
             <p style={{ textIndent: '40px' }} className="lead">
               Dr. Berland is a world renowned vascular surgeon based in New York
               City. He is listed in Castle Connolly “America’s Top Doctors” for
@@ -50,6 +50,24 @@ class Home extends Component {
               Dr. Berland speaks nationally and internationally.
             </p>
           </Col>
+        </Row>
+        <Row>
+          <ResponsiveEmbed
+            aspect="16by9"
+            style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}
+          >
+            <embed
+              type="video/mp4"
+              src="/Todd-Berland-MD.mp4"
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                maxWidth: '100%',
+                maxHeight: '100%'
+              }}
+            />
+          </ResponsiveEmbed>
         </Row>
       </Container>
     );
