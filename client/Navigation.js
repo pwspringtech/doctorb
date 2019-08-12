@@ -7,7 +7,7 @@ class Navigation extends Component {
       <Fragment>
         <Navbar fixed="top" bg="light" style={{ marginBottom: 12 }}>
           <Container>
-            <Navbar.Brand href="/home">
+            <Navbar.Brand href="#">
               Todd Berland, M.D. | <i>Vascular Specialist</i>
             </Navbar.Brand>
             <Nav className="justify-content-end">
@@ -21,6 +21,11 @@ class Navigation extends Component {
               </Col>
               <Col>
                 <Nav.Item>Publications</Nav.Item>
+              </Col>
+              <Col>
+                <Nav.Item>
+                  <Nav.Link href="#awareness">Awareness</Nav.Link>
+                </Nav.Item>
               </Col>
               <Col>
                 <Nav.Item>About</Nav.Item>
