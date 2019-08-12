@@ -1,7 +1,7 @@
 {
   "name": "toddberland",
   "version": "1.0.0",
-  "description": "Dr. Todd Berland's website",
+  "description": "Dr Todd Berland's website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -32,6 +32,8 @@
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.10",
     "react-dom": "^16.9.0",
+    "react-pdf": "^4.1.0",
+    "react-router-dom": "^5.0.1",
     "redux": "^4.0.4",
     "sequelize": "^5.12.3",
     "volleyball": "^1.5.1"
