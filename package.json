@@ -4,7 +4,8 @@
   "description": "Dr Todd Berland's website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --verbose",
+    "test:watch": "jest --verbose --watch",
     "postinstall": "./node_modules/webpack/bin/webpack.js",
     "webpack": "webpack",
     "webpack:dev": "npm run webpack -- --mode=development --watch",
@@ -40,11 +41,13 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
     "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "jest": "^24.8.0",
     "react-social-icons": "^4.1.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"

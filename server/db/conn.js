@@ -5,4 +5,5 @@ const dbConnString = process.env.DATABASE_URL || 'postgres://localhost/toddberla
 const conn = new Sequelize(dbConnString, {
   logging: false,
 });
+
 module.exports = conn;
