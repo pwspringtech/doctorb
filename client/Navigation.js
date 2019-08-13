@@ -17,7 +17,9 @@ class Navigation extends Component {
                 </Row>
               </Col>
               <Col>
-                <Nav.Item>Specialties</Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="#specialties">Specialties</Nav.Link>
+                </Nav.Item>
               </Col>
               <Col>
                 <Nav.Item>Publications</Nav.Item>

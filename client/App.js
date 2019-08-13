@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Home from './Home';
 import Awareness from './Awareness';
 import Navigation from './Navigation';
+import Specialties from './Specialties';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/awareness" component={Awareness} />
+            <Route exact path="/specialties" component={Specialties} />
           </Switch>
           <Footer />
         </HashRouter>
