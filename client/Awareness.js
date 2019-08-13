@@ -1,75 +1,125 @@
 import React, { Component, Fragment } from 'react';
-import { Container, Col, Figure, Row } from 'react-bootstrap';
-import { Document, Page } from 'react-pdf/dist/entry.webpack';
-// import patientEnglish from '..public/patientEnglish';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 
 class Awareness extends Component {
-  state = {
-    numPages: null,
-    pageNumber: 1
-  };
-
-  onDocumentLoadSuccess = document => {
-    const { numPages } = document;
-    this.setState({
-      numPages,
-      pageNumber: 1
-    });
-  };
-
-  changePage = offset =>
-    this.setState(prevState => ({
-      pageNumber: prevState.pageNumber + offset
-    }));
-
-  previousPage = () => this.changePage(-1);
-
-  nextPage = () => this.changePage(1);
-
   render() {
-    const { numPages, pageNumber } = this.state;
-
     return (
       <Fragment>
-        <Container className="d-flex flex-row pt-5 mt-5">
-          {/* <Figure>
-            <object
-              data="/PAD_Patient_English_1.pdf"
-              type="application/pdf"
-              width="100%"
-              height="100%"
-            >
-              <p>
-                Your browser does not support PDFs.
-                <a href="/PAD_Patient_English_1.pdf">Download the PDF</a>.
-              </p>
-            </object>
-          </Figure> */}
-          <Document
-            file="..public/patientEnglish.pdf"
-            onLoadSuccess={this.onDocumentLoadSuccess}
-          >
-            <Page pageNumber={pageNumber} />
-          </Document>
-          <div>
-            <p>
-              Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
-            </p>
-            <button
-              type="button"
-              disabled={pageNumber <= 1}
-              onClick={this.previousPage}
-            >
-              Previous
-            </button>
-            <button
-              type="button"
-              disabled={pageNumber >= numPages}
-              onClick={this.nextPage}
-            >
-              Next
-            </button>
-          </div>
+        <Container className="d-flex flex-column  pt-5 mt-5" fluid>
+          <Row className="justify-content-center ">
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/PAD_Aware_Poster1_English.pdf">
+                  <Card.Img
+                    src="brochures/PAD-Poster1-Thumbnail.jpg"
+                    style={{
+                      maxWdth: '650px'
+                    }}
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/PAD_Aware_Poster2_English.pdf">
+                  <Card.Img
+                    style={{
+                      maxWidth: '650px'
+                    }}
+                    src="brochures/PAD-Poster2-Thumbnail.jpg"
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/PAD_Aware_Poster3_English.pdf">
+                  <Card.Img
+                    style={{
+                      maxWidth: '650px'
+                    }}
+                    src="brochures/PAD-Poster3-Thumbnail.jpg"
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/patientEnglish.pdf">
+                  <Card.Img
+                    style={{
+                      maxWdth: '650px'
+                    }}
+                    src="brochures/patientEnglishThumb.png"
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/SymptomsChecklist.pdf">
+                  <Card.Img
+                    style={{
+                      maxWdth: '650px'
+                    }}
+                    src="brochures/SymptomsChecklist_800.png"
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/Artery-Anatomy-Flyer.pdf">
+                  <Card.Img
+                    style={{
+                      maxWidth: '650px'
+                    }}
+                    src="brochures/Artery-Anatomy-Flyer.png"
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/Diagnosis-and-Treatment-Flyer.pdf">
+                  <Card.Img
+                    style={{
+                      maxWidth: '650px'
+                    }}
+                    src="brochures/Diagnosis-and-Treatment-Flyer_thumb.png"
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+          </Row>
         </Container>
       </Fragment>
     );
