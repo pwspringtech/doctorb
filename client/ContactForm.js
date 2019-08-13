@@ -48,6 +48,9 @@ class ContactForm extends Component {
                                 isValid={this.state.firstName.valid}
                             />
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">
+                                Please enter your first name.
+                            </Form.Control.Feedback>
                             </Form.Group>
                             <Form.Group as={Col} md="6" controlId="validationCustom02">
                             <Form.Label>Last name</Form.Label>
@@ -57,6 +60,9 @@ class ContactForm extends Component {
                                 placeholder="Last name"
                             />
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                            <Form.Control.Feedback type="invalid">
+                                Please enter your last name.
+                            </Form.Control.Feedback>
                             </Form.Group>
                         </Form.Row>
                         <Form.Row>
@@ -72,7 +78,7 @@ class ContactForm extends Component {
                                 aria-describedby="inputGroupPrepend"
                                 />
                                 <Form.Control.Feedback type="invalid">
-                                Please enter a valid phone number.
+                                    Please enter a valid phone number.
                                 </Form.Control.Feedback>
                             </InputGroup>
                         </Form.Group>
@@ -91,7 +97,7 @@ class ContactForm extends Component {
                                 required
                                 />
                                 <Form.Control.Feedback type="invalid">
-                                Please enter a valid email address.
+                                    Please enter a valid email address.
                                 </Form.Control.Feedback>
                             </InputGroup>
                         </Form.Group>
