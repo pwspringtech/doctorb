@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Home from './Home';
 import Awareness from './Awareness';
 import Navigation from './Navigation';
+import Contact from './Contact';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <Navigation />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/contact" component={Contact} />
             <Route exact path="/awareness" component={Awareness} />
           </Switch>
           <Footer />
