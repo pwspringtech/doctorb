@@ -5,8 +5,11 @@ class Awareness extends Component {
   render() {
     return (
       <Fragment>
-        <Container className="d-flex flex-column  pt-5 mt-5" fluid>
-          <Row className="justify-content-center ">
+        <Container
+          className="d-flex align-items-start flex-column  pt-5 mt-5"
+          fluid
+        >
+          <Row className="justify-content-center">
             <Col xs xl="3" className="m-4 ">
               <Card
                 style={{
@@ -17,7 +20,7 @@ class Awareness extends Component {
                   <Card.Img
                     src="brochures/PAD-Poster1-Thumbnail.jpg"
                     style={{
-                      maxWdth: '650px'
+                      maxWidth: '650px'
                     }}
                   />
                 </Card.Link>
@@ -55,22 +58,7 @@ class Awareness extends Component {
                 </Card.Link>
               </Card>
             </Col>
-            <Col xs xl="3" className="m-4 ">
-              <Card
-                style={{
-                  borderWidth: '2px'
-                }}
-              >
-                <Card.Link href="brochures/patientEnglish.pdf">
-                  <Card.Img
-                    style={{
-                      maxWdth: '650px'
-                    }}
-                    src="brochures/patientEnglishThumb.png"
-                  />
-                </Card.Link>
-              </Card>
-            </Col>
+
             <Col xs xl="3" className="m-4 ">
               <Card
                 style={{
@@ -80,7 +68,7 @@ class Awareness extends Component {
                 <Card.Link href="brochures/SymptomsChecklist.pdf">
                   <Card.Img
                     style={{
-                      maxWdth: '650px'
+                      maxWidth: '650px'
                     }}
                     src="brochures/SymptomsChecklist_800.png"
                   />
@@ -115,6 +103,54 @@ class Awareness extends Component {
                       maxWidth: '650px'
                     }}
                     src="brochures/Diagnosis-and-Treatment-Flyer_thumb.png"
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/Fact-Sheet-thumb.pdf">
+                  <Card.Img
+                    style={{
+                      maxWidth: '650px'
+                    }}
+                    src="brochures/Fact-Sheet-thumb.png"
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/patientEnglish.pdf">
+                  <Card.Img
+                    style={{
+                      maxWidth: '650px'
+                    }}
+                    src="brochures/patientEnglishThumb.png"
+                  />
+                </Card.Link>
+              </Card>
+            </Col>
+            <Col xs xl="3" className="m-4 ">
+              <Card
+                style={{
+                  borderWidth: '2px'
+                }}
+              >
+                <Card.Link href="brochures/Angiosomes-Flyer.pdf">
+                  <Card.Img
+                    style={{
+                      maxWidth: '650px'
+                    }}
+                    src="brochures/Angiosomes-Flyer-thumb.png"
                   />
                 </Card.Link>
               </Card>
