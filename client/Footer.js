@@ -34,7 +34,6 @@ class Footer extends Component {
                     <li>Peripheral Vascular Disease</li>
                     <li>Angioplasty / Stenting</li>
                     <li>Venous Disease</li>
-                    <li>Venous Disease</li>
                     <li>Deep Vein Thrombosis</li>
                     <li>Aortic Anuerysms</li>
                     <li>Cerebrovascular Disease</li>

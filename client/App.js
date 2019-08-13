@@ -6,6 +6,8 @@ import Awareness from './Awareness';
 import Navigation from './Navigation';
 import Specialties from './Specialties';
 
+import Contact from './Contact';
+
 class App extends Component {
   render() {
     return (
@@ -14,6 +16,7 @@ class App extends Component {
           <Navigation />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/contact" component={Contact} />
             <Route exact path="/awareness" component={Awareness} />
             <Route exact path="/specialties" component={Specialties} />
           </Switch>
