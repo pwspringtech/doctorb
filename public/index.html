@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="/bundle.js" defer></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+      (function() {
+        var st = document.createElement("script");
+        st.type = "text/javascript";
+        st.async = true;
+        st.src =
+          "https://www.researchgate.net/javascript/plugin/plugin-api-min.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(st, s);
+      })();
+    </script>
 
     <!-- ===============================================-->
     <!--    Stylesheets-->

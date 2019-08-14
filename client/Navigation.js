@@ -22,7 +22,9 @@ class Navigation extends Component {
                 </Nav.Item>
               </Col>
               <Col>
-                <Nav.Item>Publications</Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="#publications">Publications</Nav.Link>
+                </Nav.Item>
               </Col>
               <Col>
                 <Nav.Item>
