@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import React, { Component, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -6,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Formik } from 'formik';
 
 class ContactForm extends Component {
 
@@ -13,10 +15,19 @@ class ContactForm extends Component {
         super(props)
         this.state = {
             validated: false,
-            firstName: {
-                value: '',
-                valid: false
-            }
+        }
+    }
+
+    isInvalidFormInput = (type, value) => {
+        // type: email, phone number
+        switch (type) {
+            case 'email':
+                if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value)) {
+                    return true
+                } else {
+                    return false
+                }
+
         }
     }
 
@@ -27,6 +38,11 @@ class ContactForm extends Component {
             event.stopPropagation();
         }
         this.setState({ validated: true })
+    }
+
+    handleChange = event => {
+        const tempState = { value: event.target.value }
+        this.setState({ lineitems: templineitems });
     }
 
     render() {
@@ -45,7 +61,6 @@ class ContactForm extends Component {
                                 required
                                 type="text"
                                 placeholder="First name"
-                                isValid={this.state.firstName.valid}
                             />
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                             <Form.Control.Feedback type="invalid">

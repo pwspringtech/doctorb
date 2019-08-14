@@ -6,6 +6,7 @@ import Awareness from './Awareness';
 import Navigation from './Navigation';
 import Specialties from './Specialties';
 import Contact from './Contact';
+import About from './About';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/awareness" component={Awareness} />
             <Route exact path="/specialties" component={Specialties} />
+            <Route exact path="/about" component={About} />
           </Switch>
           <Footer />
         </HashRouter>

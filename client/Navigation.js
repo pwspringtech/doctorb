@@ -30,10 +30,14 @@ class Navigation extends Component {
                 </Nav.Item>
               </Col>
               <Col>
-                <Nav.Item>About</Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="#about">About</Nav.Link>
+                </Nav.Item>
               </Col>
               <Col>
-                <Nav.Item>Contact</Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="#contact">Contact</Nav.Link>
+                </Nav.Item>
               </Col>
             </Nav>
           </Container>
