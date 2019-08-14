@@ -6,9 +6,36 @@ class Publications extends Component {
     return (
       <Fragment>
         <Container className="d-flex flex-row pt-5 mt-5">
-          <Row className="justify-content-center">
+          <Row className="justify-content-start">
+            <Row>
+              <Container className="mb-5">
+                <script>
+                  {(function() {
+                    var st = document.createElement('script');
+                    st.type = 'text/javascript';
+                    st.async = true;
+                    st.src =
+                      'https://www.researchgate.net/javascript/plugin/plugin-api-min.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(st, s);
+                  })()}
+                </script>
+
+                <div
+                  className="rg-plugin"
+                  data-stats="true"
+                  data-faces="true"
+                  data-publications="true"
+                  data-height="600"
+                  data-width="350"
+                  data-theme="light"
+                  data-type="department"
+                  data-installationId="5d54088d4f3a3e1acb3440c6"
+                />
+              </Container>
+            </Row>
             {/* card */}
-            <Col xs xl="3" className="m-1 p-1">
+            <Col xs="auto" md="3" lg="4" xl="4" className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -29,7 +56,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs xl="3" className="m-1 p-1">
+            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -51,7 +78,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs xl="3" className="m-1 p-1">
+            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -72,7 +99,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs xl="3" className="m-1 p-1">
+            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -92,7 +119,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs xl="3" className="m-1 p-1">
+            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -113,7 +140,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs xl="3" className="m-1 p-1">
+            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -134,7 +161,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs xl="3" className="m-1 p-1">
+            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
