@@ -6,9 +6,9 @@ class Publications extends Component {
     return (
       <Fragment>
         <Container className="d-flex flex-row pt-5 mt-5">
-          <Row className="justify-content-start">
-            <Row>
-              <Container className="mb-5">
+          <Row className="justify-content-center">
+            <Row className="justify-content-center">
+              <Container>
                 <script>
                   {(function() {
                     var st = document.createElement('script');
@@ -21,13 +21,14 @@ class Publications extends Component {
                   })()}
                 </script>
 
-                <div
+                <Col
+                  xs="true"
                   className="rg-plugin"
                   data-stats="true"
                   data-faces="true"
                   data-publications="true"
-                  data-height="600"
-                  data-width="350"
+                  data-height="510"
+                  data-width="600"
                   data-theme="light"
                   data-type="department"
                   data-installationId="5d54088d4f3a3e1acb3440c6"
