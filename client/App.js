@@ -5,6 +5,7 @@ import Home from './Home';
 import Awareness from './Awareness';
 import Navigation from './Navigation';
 import Specialties from './Specialties';
+import Publications from './Publications';
 
 import Contact from './Contact';
 
@@ -19,6 +20,7 @@ class App extends Component {
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/awareness" component={Awareness} />
             <Route exact path="/specialties" component={Specialties} />
+            <Route exact path="/publications" component={Publications} />
           </Switch>
           <Footer />
         </HashRouter>
