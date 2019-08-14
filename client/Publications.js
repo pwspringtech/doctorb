@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Publications extends Component {
   render() {
@@ -36,7 +39,7 @@ class Publications extends Component {
               </Container>
             </Row>
             {/* card */}
-            <Col xs="auto" md="3" lg="4" xl="4" className="p-1">
+            <Col md={3} className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -57,7 +60,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col md={3} className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -79,7 +82,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col md={3} className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -100,7 +103,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col md={3} className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -120,7 +123,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col md={3} className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -141,7 +144,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col md={3} className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -162,7 +165,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col md={3} className="p-1">
               <Card
                 style={{
                   borderWidth: '2px',
