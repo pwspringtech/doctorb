@@ -74,7 +74,7 @@ class Publications extends Component {
                 }}
               >
                 <Card.Body>
-                  <Card.Link href="https://www.ncbi.nlm.nih.gov/pubmed/17375786">
+                  <Card.Link href="#arteryimbrication">
                     <Card.Img
                       variant="top"
                       src="/publications/CommonCarotidArteryImbrication-thumb.png"
@@ -95,7 +95,7 @@ class Publications extends Component {
                 }}
               >
                 <Card.Body>
-                  <Card.Link href="/publications/Acute-Mesenteric-Ischemia.pdf">
+                  <Card.Link href="#mesentericischemia">
                     <Card.Img
                       variant="top"
                       src="/publications/Acute-Mesenteric-Ischemia-pic.jpg"
@@ -115,7 +115,7 @@ class Publications extends Component {
                 }}
               >
                 <Card.Body>
-                  <Card.Link href="/publications/1000-saphenous-ablations-1.pdf">
+                  <Card.Link href="#cysticadventitialdisease">
                     <Card.Img
                       variant="top"
                       src="/publications/Cysticadventitialdiseaseofthepoplitealartery.png"
@@ -136,7 +136,7 @@ class Publications extends Component {
                 }}
               >
                 <Card.Body>
-                  <Card.Link href="/publications/1000-saphenous-ablations-1.pdf">
+                  <Card.Link href="#IntentionalOcclusionAAA">
                     <Card.Img
                       variant="top"
                       src="/publications/1000-saphenous-ablations-pic1.jpg"
@@ -157,7 +157,7 @@ class Publications extends Component {
                 }}
               >
                 <Card.Body>
-                  <Card.Link href="/publications/UpdateonEndovenousLaserAblation.pdf">
+                  <Card.Link href="#UpdateEVLA">
                     <Card.Img
                       variant="top"
                       src="/publications/UpdateonEndovenousLaserAblation_pic1.png"
