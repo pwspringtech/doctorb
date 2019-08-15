@@ -12,9 +12,9 @@ class Navigation extends Component {
         <Navbar
           fixed="top"
           bg="light"
-          style={{ marginBottom: 12 }}
           expand="md"
           collapseOnSelect
+          className="mb-5"
         >
           <Container>
             <Navbar.Brand href="#">
@@ -28,7 +28,7 @@ class Navigation extends Component {
               <Nav className="justify-content-end">
                 <Col>
                   <Nav.Item>
-                    <Nav.Link>SiriusXM Show</Nav.Link>
+                    <Nav.Link href="#show">SiriusXM Show</Nav.Link>
                   </Nav.Item>
                 </Col>
                 <Col>
@@ -48,7 +48,13 @@ class Navigation extends Component {
                 </Col>
                 <Col>
                   <Nav.Item>
-                    <Link to={{ pathname: 'about', state: { twitterLoaded: false } }} className="nav-link">
+                    <Link
+                      to={{
+                        pathname: 'about',
+                        state: { twitterLoaded: false }
+                      }}
+                      className="nav-link"
+                    >
                       About
                     </Link>
                   </Nav.Item>

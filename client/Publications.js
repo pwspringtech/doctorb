@@ -168,14 +168,14 @@ class Publications extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            <Col md={3} className="p-2">
+            <Col xs={10} md={3} className="p-2">
               <Container
                 className="rg-plugin"
                 data-stats="true"
                 data-faces="true"
                 data-publications="true"
-                data-height="600"
-                data-width="400"
+                data-height="650"
+                data-width="330"
                 data-theme="light"
                 data-type="department"
                 data-installationId="5d54ba053d48b73a4b023cf9"
