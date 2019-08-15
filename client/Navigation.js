@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Container, Col, Navbar, Nav, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class Navigation extends Component {
   render() {
@@ -33,7 +34,9 @@ class Navigation extends Component {
               </Col>
               <Col>
                 <Nav.Item>
-                  <Nav.Link href="#about">About</Nav.Link>
+                    <Link to={{ pathname: 'about', state: { twitterLoaded: false } }} className="nav-link">
+                      About
+                    </Link>
                 </Nav.Item>
               </Col>
               <Col>

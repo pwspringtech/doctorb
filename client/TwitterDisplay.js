@@ -5,11 +5,11 @@ import Col from 'react-bootstrap/Col';
 
 class TwitterDisplay extends Component {
 
-    componentDidMount() {
+    loadTwitter() {
+        console.log('Use Load twitter')
         window.twttr = (function(d, s, id) {
             let js, fjs = d.getElementsByTagName(s)[0],
               t = window.twttr || {};
-            if (d.getElementById(id)) return t;
             js = d.createElement(s);
             js.id = id;
             js.src = 'https://platform.twitter.com/widgets.js';
@@ -20,6 +20,11 @@ class TwitterDisplay extends Component {
             };
             return t;
           }(document, 'script', 'twitter-wjs'))
+    }
+
+    componentDidMount() {
+        console.log('load')
+        this.loadTwitter()
     }
 
     render() {
