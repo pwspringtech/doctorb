@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { Container, Col, Navbar, Nav, Row } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Col from 'react-bootstrap/Col';
 
 class Navigation extends Component {
   render() {
@@ -9,12 +12,15 @@ class Navigation extends Component {
           fixed="top"
           bg="light"
           style={{ marginBottom: 12 }}
-          expand="lg"
+          expand="md"
           collapseOnSelect
         >
           <Container>
             <Navbar.Brand href="#">
-              Todd Berland, M.D. | <i>Vascular Specialist</i>
+              Todd Berland, M.D. <br />
+              <i>
+                <small> Vascular Specialist</small>
+              </i>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
