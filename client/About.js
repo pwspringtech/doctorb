@@ -12,7 +12,7 @@ class About extends Component {
             <Container>
                 <Row className="pt-5 mt-5 mb-2" >
                     <Col>
-                        <TwitterDisplay />
+                        <TwitterDisplay twitterLoaded={false} />
                     </Col>
                 </Row>
                 <Row className="mb-4">

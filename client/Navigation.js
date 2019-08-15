@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -47,7 +48,9 @@ class Navigation extends Component {
                 </Col>
                 <Col>
                   <Nav.Item>
-                    <Nav.Link href="#about">About</Nav.Link>
+                    <Link to={{ pathname: 'about', state: { twitterLoaded: false } }} className="nav-link">
+                      About
+                    </Link>
                   </Nav.Item>
                 </Col>
                 <Col>
