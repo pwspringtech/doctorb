@@ -6,8 +6,14 @@ import Awareness from './Awareness';
 import Navigation from './Navigation';
 import Specialties from './Specialties';
 import Publications from './Publications';
+import ArteryImbrication from './ArteryImbrication';
+import CysticAdventitialDisease from './CysticAdventitialDisease';
+import MesentericIschemia from './MesentericIschemia';
+import IntentionalOcclusionAAA from './IntentionalOcclusionAAA';
+import UpdateEVLA from './UpdateEVLA';
 import Contact from './Contact';
 import About from './About';
+import Show from './Show';
 
 class App extends Component {
   render() {
@@ -22,6 +28,28 @@ class App extends Component {
             <Route exact path="/specialties" component={Specialties} />
             <Route exact path="/about" component={About} />
             <Route exact path="/publications" component={Publications} />
+            <Route
+              exact
+              path="/arteryimbrication"
+              component={ArteryImbrication}
+            />
+            <Route
+              exact
+              path="/mesentericischemia"
+              component={MesentericIschemia}
+            />
+            <Route
+              exact
+              path="/cysticadventitialdisease"
+              component={CysticAdventitialDisease}
+            />
+            <Route
+              exact
+              path="/intentionalocclusionaaa"
+              component={IntentionalOcclusionAAA}
+            />
+            <Route exact path="/updateevla" component={UpdateEVLA} />
+            <Route exact path="/show" component={Show} />
           </Switch>
           <Footer />
         </HashRouter>
