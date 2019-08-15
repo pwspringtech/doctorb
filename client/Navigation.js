@@ -1,50 +1,65 @@
 import React, { Component, Fragment } from 'react';
-import { Container, Col, Navbar, Nav, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Col from 'react-bootstrap/Col';
 
 class Navigation extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar fixed="top" bg="light" style={{ marginBottom: 12 }}>
+        <Navbar
+          fixed="top"
+          bg="light"
+          style={{ marginBottom: 12 }}
+          expand="md"
+          collapseOnSelect
+        >
           <Container>
             <Navbar.Brand href="#">
-              Todd Berland, M.D. | <i>Vascular Specialist</i>
+              Todd Berland, M.D. <br />
+              <i>
+                <small> Vascular Specialist</small>
+              </i>
             </Navbar.Brand>
-            <Nav className="justify-content-end">
-              <Col>
-                <Row>
-                  <Nav.Item>SiriusXM Show</Nav.Item>
-                </Row>
-              </Col>
-              <Col>
-                <Nav.Item>
-                  <Nav.Link href="#specialties">Specialties</Nav.Link>
-                </Nav.Item>
-              </Col>
-              <Col>
-                <Nav.Item>
-                  <Nav.Link href="#publications">Publications</Nav.Link>
-                </Nav.Item>
-              </Col>
-              <Col>
-                <Nav.Item>
-                  <Nav.Link href="#awareness">Awareness</Nav.Link>
-                </Nav.Item>
-              </Col>
-              <Col>
-                <Nav.Item>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="justify-content-end">
+                <Col>
+                  <Nav.Item>
+                    <Nav.Link>SiriusXM Show</Nav.Link>
+                  </Nav.Item>
+                </Col>
+                <Col>
+                  <Nav.Item>
+                    <Nav.Link href="#specialties">Specialties</Nav.Link>
+                  </Nav.Item>
+                </Col>
+                <Col>
+                  <Nav.Item>
+                    <Nav.Link href="#publications">Publications</Nav.Link>
+                  </Nav.Item>
+                </Col>
+                <Col>
+                  <Nav.Item>
+                    <Nav.Link href="#awareness">Awareness</Nav.Link>
+                  </Nav.Item>
+                </Col>
+                <Col>
+                  <Nav.Item>
                     <Link to={{ pathname: 'about', state: { twitterLoaded: false } }} className="nav-link">
                       About
                     </Link>
-                </Nav.Item>
-              </Col>
-              <Col>
-                <Nav.Item>
-                  <Nav.Link href="#contact">Contact</Nav.Link>
-                </Nav.Item>
-              </Col>
-            </Nav>
+                  </Nav.Item>
+                </Col>
+                <Col>
+                  <Nav.Item>
+                    <Nav.Link href="#contact">Contact</Nav.Link>
+                  </Nav.Item>
+                </Col>
+              </Nav>
+            </Navbar.Collapse>
           </Container>
         </Navbar>
       </Fragment>

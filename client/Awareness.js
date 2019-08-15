@@ -1,5 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Awareness extends Component {
   render() {
@@ -10,7 +13,7 @@ class Awareness extends Component {
           fluid
         >
           <Row className="justify-content-center">
-            <Col xs xl="3" className="m-4 ">
+            <Col md={3} className="m-1">
               <Card
                 style={{
                   borderWidth: '2px'
@@ -26,7 +29,7 @@ class Awareness extends Component {
                 </Card.Link>
               </Card>
             </Col>
-            <Col xs xl="3" className="m-4 ">
+            <Col md={3} className="m-1">
               <Card
                 style={{
                   borderWidth: '2px'
@@ -42,7 +45,7 @@ class Awareness extends Component {
                 </Card.Link>
               </Card>
             </Col>
-            <Col xs xl="3" className="m-4 ">
+            <Col md={3} className="m-1">
               <Card
                 style={{
                   borderWidth: '2px'
@@ -59,7 +62,7 @@ class Awareness extends Component {
               </Card>
             </Col>
 
-            <Col xs xl="3" className="m-4 ">
+            <Col md={3} className="m-1">
               <Card
                 style={{
                   borderWidth: '2px'
@@ -75,7 +78,7 @@ class Awareness extends Component {
                 </Card.Link>
               </Card>
             </Col>
-            <Col xs xl="3" className="m-4 ">
+            <Col md={3} className="m-1">
               <Card
                 style={{
                   borderWidth: '2px'
@@ -91,7 +94,7 @@ class Awareness extends Component {
                 </Card.Link>
               </Card>
             </Col>
-            <Col xs xl="3" className="m-4 ">
+            <Col md={3} className="m-1">
               <Card
                 style={{
                   borderWidth: '2px'
@@ -107,7 +110,7 @@ class Awareness extends Component {
                 </Card.Link>
               </Card>
             </Col>
-            <Col xs xl="3" className="m-4 ">
+            <Col md={3} className="m-1">
               <Card
                 style={{
                   borderWidth: '2px'
@@ -123,7 +126,7 @@ class Awareness extends Component {
                 </Card.Link>
               </Card>
             </Col>
-            <Col xs xl="3" className="m-4 ">
+            <Col md={3} className="m-1">
               <Card
                 style={{
                   borderWidth: '2px'
@@ -139,7 +142,7 @@ class Awareness extends Component {
                 </Card.Link>
               </Card>
             </Col>
-            <Col xs xl="3" className="m-4 ">
+            <Col md={3} className="m-1">
               <Card
                 style={{
                   borderWidth: '2px'

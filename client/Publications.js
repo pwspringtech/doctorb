@@ -1,42 +1,29 @@
 import React, { Component, Fragment } from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Publications extends Component {
+  componentDidMount() {
+    (() => {
+      var st = document.createElement('script');
+      st.type = 'text/javascript';
+      st.async = true;
+      st.src =
+        'https://www.researchgate.net/javascript/plugin/plugin-api-min.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(st, s);
+    })();
+  }
+
   render() {
     return (
       <Fragment>
-        <Container className="d-flex flex-row pt-5 mt-5">
-          <Row className="justify-content-center">
-            <Row className="justify-content-center">
-              <Container>
-                <script>
-                  {(function() {
-                    var st = document.createElement('script');
-                    st.type = 'text/javascript';
-                    st.async = true;
-                    st.src =
-                      'https://www.researchgate.net/javascript/plugin/plugin-api-min.js';
-                    var s = document.getElementsByTagName('script')[0];
-                    s.parentNode.insertBefore(st, s);
-                  })()}
-                </script>
-
-                <Col
-                  xs="true"
-                  className="rg-plugin"
-                  data-stats="true"
-                  data-faces="true"
-                  data-publications="true"
-                  data-height="510"
-                  data-width="600"
-                  data-theme="light"
-                  data-type="department"
-                  data-installationId="5d54088d4f3a3e1acb3440c6"
-                />
-              </Container>
-            </Row>
+        <Container className="d-flex flex-row-wrap pt-5 mt-5">
+          <Row className="justify-content-start">
             {/* card */}
-            <Col xs="auto" md="3" lg="4" xl="4" className="p-1">
+            <Col xs={10} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -57,7 +44,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col xs={10} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -79,7 +66,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col xs={10} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -100,7 +87,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col xs={10} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -120,7 +107,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col xs={10} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -141,7 +128,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col xs={10} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -162,7 +149,7 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs="3" md="3" lg="4" xl="4" className="p-1">
+            <Col xs={10} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
@@ -180,6 +167,19 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
+            </Col>
+            <Col md={3} className="p-2">
+              <Container
+                className="rg-plugin"
+                data-stats="true"
+                data-faces="true"
+                data-publications="true"
+                data-height="600"
+                data-width="400"
+                data-theme="light"
+                data-type="department"
+                data-installationId="5d54ba053d48b73a4b023cf9"
+              />
             </Col>
           </Row>
         </Container>
