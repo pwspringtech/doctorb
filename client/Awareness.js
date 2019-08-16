@@ -68,12 +68,12 @@ class Awareness extends Component {
                   borderWidth: '2px'
                 }}
               >
-                <Card.Link href="brochures/SymptomsChecklist.pdf">
+                <Card.Link href="brochures/Symptoms_Checklist.pdf">
                   <Card.Img
                     style={{
                       maxWidth: '650px'
                     }}
-                    src="brochures/SymptomsChecklist_800.png"
+                    src="brochures/Symptoms_Checklist_thumb.png"
                   />
                 </Card.Link>
               </Card>
@@ -89,7 +89,7 @@ class Awareness extends Component {
                     style={{
                       maxWidth: '650px'
                     }}
-                    src="brochures/Artery-Anatomy-Flyer.png"
+                    src="brochures/Artery-Anatomy-Flyer-thumb.png"
                   />
                 </Card.Link>
               </Card>
@@ -132,12 +132,12 @@ class Awareness extends Component {
                   borderWidth: '2px'
                 }}
               >
-                <Card.Link href="brochures/patientEnglish.pdf">
+                <Card.Link href="brochures/patient_English.pdf">
                   <Card.Img
                     style={{
                       maxWidth: '650px'
                     }}
-                    src="brochures/patientEnglishThumb.png"
+                    src="brochures/patient_English_thumb.png"
                   />
                 </Card.Link>
               </Card>
