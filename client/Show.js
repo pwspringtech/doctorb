@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
+import TwitterDisplay from './TwitterDisplay';
 
 class Show extends Component {
   render() {
@@ -51,10 +52,9 @@ class Show extends Component {
               </Carousel>
 
               <h6 className="ml-5 mb-2 mt-2">
-                Doctor Radio SiriusXM Channel 110{' '}
+                Doctor Radio SiriusXM Channel 110
               </h6>
-            </Col>
-            <Col>
+
               <h5 className="mt-2 pt-3">
                 Dr. Todd Berland{' '}
                 <small>
@@ -81,6 +81,9 @@ class Show extends Component {
                 alt="Vascular Surgery Show"
                 width="100px"
               />
+            </Col>
+            <Col>
+              <TwitterDisplay twitterLoaded={false} />
             </Col>
           </Row>
         </Container>
