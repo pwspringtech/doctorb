@@ -11,10 +11,10 @@ class Show extends Component {
     return (
       <Fragment>
         <Container
-          className="d-flex flex-column "
+          className="d-flex flex-stretch"
           style={{ marginTop: '120px' }}
         >
-          <Row md={4} className="justify-content-center">
+          <Row xl={6} className="justify-content-center">
             <Col>
               <Row style={{ height: '80px' }}>
                 <Image
@@ -41,9 +41,10 @@ class Show extends Component {
                   height="40px"
                 />
                 <Image
-                  src="/show-pics/Channel-110.png"
+                  src="/show-pics/Channel-110-grey.png"
                   alt="Vascular Surgery Show"
-                  height="35px"
+                  height="28px"
+                  className="ml-2 pt-2"
                 />
               </Row>
 
@@ -84,9 +85,9 @@ class Show extends Component {
                   <br />
                   <br />
                   The Vacular Surgery Show is recorded bi-monthly and airs live
-                  every other Friday 6am-8am ET and then re-airs Friday 4pm-6pm
-                  ET. On-Demand episodes are also available for SiriusXM
-                  subscribers.
+                  on SiriusXM channel 110 every other Friday 6am-8am ET and
+                  re-airs Friday 4pm-6pm ET. On-Demand episodes are also
+                  available via SiriusXM.
                 </small>
               </h5>
             </Col>

@@ -1,12 +1,12 @@
-import React, { Component, Fragment } from 'react';
-import { Accordion, Card, Col, Container, Row } from 'react-bootstrap';
+import React, { Component, Fragment } from "react";
+import { Accordion, Card, Col, Container, Row } from "react-bootstrap";
 
 class Specialties extends Component {
   render() {
     return (
       <Fragment>
         <Container
-          style={{ marginTop: '80px' }}
+          style={{ marginTop: "80px" }}
           className="d-flex flex-column"
           fluid
         >
@@ -20,7 +20,7 @@ class Specialties extends Component {
             </Row>
           </Col>
           <Row className="justify-content-center mb-4">
-            <Col xs="10" xl="8">
+            <Col xs="10" xl="6">
               <Accordion>
                 <Card className="text-center">
                   <Accordion.Toggle
@@ -34,7 +34,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -64,7 +64,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -84,7 +84,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -97,7 +97,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -121,7 +121,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -143,7 +143,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -167,7 +167,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -188,7 +188,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -206,7 +206,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -230,7 +230,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -244,7 +244,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -269,7 +269,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -288,7 +288,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >

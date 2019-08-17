@@ -17,7 +17,7 @@ class Navigation extends Component {
           className="mb-5"
         >
           <Container>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="#" className={{ fontsize: 48 }}>
               Todd Berland, M.D. <br />
               <i>
                 <small> Vascular Specialist</small>
