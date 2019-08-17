@@ -5,7 +5,11 @@ class Specialties extends Component {
   render() {
     return (
       <Fragment>
-        <Container className="d-flex flex-column  pt-4 mt-4" fluid>
+        <Container
+          style={{ marginTop: '80px' }}
+          className="d-flex flex-column"
+          fluid
+        >
           <Col className="m-2">
             <Row className="justify-content-center mt-4 mb-3">
               <h4> Dr. Todd Berland specializes in:</h4>
