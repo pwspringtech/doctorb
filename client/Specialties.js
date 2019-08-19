@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { Accordion, Card, Col, Container, Row } from "react-bootstrap";
 
 class Specialties extends Component {
+
   constructor(props){
     super(props)
     this.state={
@@ -14,6 +15,7 @@ class Specialties extends Component {
     this.setState({ defaultActiveKey: this.props.match.params.dak})
     console.log(this.state.defaultActiveKey)
   }
+
 
   render() {
     return (

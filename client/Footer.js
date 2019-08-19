@@ -3,14 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { SocialIcon } from 'react-social-icons';
-import { Link } from 'react-router-dom'
 
+import { Link } from 'react-router-dom';
 
 class Footer extends Component {
-
-  specialtyIdx = ( idx )=> {
-    <a href="#Specialties" dak={idx} />
-  }
 
   render() {
     return (
@@ -19,13 +15,15 @@ class Footer extends Component {
           <Container>
             <Row className="mb-5">
                 <Col sm className="mt-5">
-                  <h6>Home</h6>
-                  <h6>About</h6>
-                  <h6>Publications</h6>
-                  <h6>
-                    <i>Vascular Surgery Show</i> SiriusXM
-                  </h6>
-                  <h6>Contact</h6>
+                  <Link to="/" className="text-dark"><h6>Home</h6></Link>
+                  <Link to="/about" className="text-dark"><h6>About</h6></Link>
+                  <Link to="/publications" className="text-dark"><h6>Publications</h6></Link>
+                  <Link to="/show" className="text-dark">
+                    <h6>
+                      <i>Vascular Surgery Show</i> SiriusXM
+                    </h6>
+                  </Link>
+                  <Link to="/contact" className="text-dark"><h6>Contact</h6></Link>
                   <p>
                     Tel: <a href="tel:2122635060">212-263-5060</a>
                   </p>
@@ -34,7 +32,7 @@ class Footer extends Component {
                   <SocialIcon url="https://www.instagram.com/thevasculardr/" style={{ height: 40, width: 40 }} />
                 </Col>
                 <Col sm className="mt-5">
-                  <h6>Specialties</h6>
+                  <Link to="/specialties" className="text-dark"><h6>Specialties</h6></Link>
                   <ul>
                     <li><a href="#Specialties/0" >Vascular Surgery </a></li>
                     <li><a href="#Specialties/1" >Endovascular Surgery </a></li>
