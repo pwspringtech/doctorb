@@ -34,8 +34,10 @@ class Footer extends Component {
                 <Col sm className="mt-5">
                   <Link to="/specialties" className="text-dark"><h6>Specialties</h6></Link>
                   <ul>
-                    <li><a href="#Specialties/0" >Vascular Surgery </a></li>
-                    <li><a href="#Specialties/1" >Endovascular Surgery </a></li>
+                    {/* <li><a href="#Specialties/0" >Vascular Surgery </a></li> */}
+                    {/* <li><a href="#Specialties/1" >Endovascular Surgery </a></li> */}
+                    <li><Link to="Specialties/0" >Vascular Surgery </Link></li>
+                    <li><Link to="#Specialties/1" >Endovascular Surgery </Link></li>
                     <li><a href="#Specialties/2" >Peripheral Vascular Disease </a></li>
                     <li><a href="#Specialties/3" >Angioplasty / Stenting </a></li>
                     <li><a href="#Specialties/4" > Venous Disease</a></li>

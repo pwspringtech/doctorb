@@ -33,7 +33,7 @@ class Navigation extends Component {
                 </Col>
                 <Col>
                   <Nav.Item>
-                    <Nav.Link href="#specialties/null">Specialties</Nav.Link>
+                    <Nav.Link href="#specialties/:null">Specialties</Nav.Link>
                   </Nav.Item>
                 </Col>
                 <Col>
@@ -48,15 +48,12 @@ class Navigation extends Component {
                 </Col>
                 <Col>
                   <Nav.Item>
-                    <Link
-                      to={{
-                        pathname: 'about',
-                        state: { twitterLoaded: false }
-                      }}
-                      className="nav-link"
+                    <Nav.Link
+                      href='#about'
                     >
                       About
-                    </Link>
+                    </Nav.Link>
+      
                   </Nav.Item>
                 </Col>
                 <Col>
