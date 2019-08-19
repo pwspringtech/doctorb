@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { SocialIcon } from 'react-social-icons';
+
 import { Link } from 'react-router-dom';
 
 class Footer extends Component {
@@ -33,14 +34,16 @@ class Footer extends Component {
                 <Col sm className="mt-5">
                   <Link to="/specialties" className="text-dark"><h6>Specialties</h6></Link>
                   <ul>
-                    <li>Vascular Surgery</li>
-                    <li>Endovascular Surgery</li>
-                    <li>Peripheral Vascular Disease</li>
-                    <li>Angioplasty / Stenting</li>
-                    <li>Venous Disease</li>
-                    <li>Deep Vein Thrombosis</li>
-                    <li>Aortic Anuerysms</li>
-                    <li>Cerebrovascular Disease</li>
+                    {/* <li><a href="#Specialties/0" >Vascular Surgery </a></li> */}
+                    {/* <li><a href="#Specialties/1" >Endovascular Surgery </a></li> */}
+                    <li><Link to="Specialties/0" >Vascular Surgery </Link></li>
+                    <li><Link to="#Specialties/1" >Endovascular Surgery </Link></li>
+                    <li><a href="#Specialties/2" >Peripheral Vascular Disease </a></li>
+                    <li><a href="#Specialties/3" >Angioplasty / Stenting </a></li>
+                    <li><a href="#Specialties/4" > Venous Disease</a></li>
+                    <li><a href="#Specialties/5" > Deep Vein Thrombosis </a> </li>
+                    <li><a href="#Specialties/6" >Aortic Anuerysms </a></li>
+                    <li><a href="#Specialties/7" >Cerebrovascular Disease </ a></li>
                   </ul>
                 </Col>
                 <Col lg={6} className="mt-4">

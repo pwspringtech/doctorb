@@ -1,18 +1,35 @@
-import React, { Component, Fragment } from 'react';
-import { Accordion, Card, Col, Container, Row } from 'react-bootstrap';
+import React, { Component, Fragment } from "react";
+import { Accordion, Card, Col, Container, Row } from "react-bootstrap";
 
 class Specialties extends Component {
 
-  // componentDidMount() {
-  //   if (this.props.eventKey) {
-  //     ('#1').collapse('show')
-  //   }
+  constructor(props){
+    super(props)
+    this.state={
+      defaultActiveKey: this.props.match.params.dak
+    }
+  }
+
+  // componentDidMount(){
+    // if(this.props.location.pathname !== this.props.history.location.pathname){
+    //   this.props.history.push(this.props.location.pathname)
+    // }
+    // console.log(this.props.match.params.dak)
+    // console.log(this.props.history.location.pathname)
+    // console.log(this.props.location.pathname)
+    // console.log(this.state.defaultActiveKey)
   // }
 
+
   render() {
+    const dak = this.state.defaultActiveKey
     return (
       <Fragment>
-        <Container className="d-flex flex-column  pt-4 mt-4" fluid>
+        <Container
+          style={{ marginTop: "80px" }}
+          className="d-flex flex-column"
+          fluid
+        >
           <Col className="m-2">
             <Row className="justify-content-center mt-4 mb-3">
               <h4> Dr. Todd Berland specializes in:</h4>
@@ -23,8 +40,8 @@ class Specialties extends Component {
             </Row>
           </Col>
           <Row className="justify-content-center mb-4">
-            <Col xs="10" xl="8">
-              <Accordion>
+            <Col xs="10" xl="6">
+              <Accordion defaultActiveKey={dak}>
                 <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
@@ -37,7 +54,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -67,7 +84,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -87,7 +104,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -100,7 +117,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -124,7 +141,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -134,6 +151,39 @@ class Specialties extends Component {
                         because a lack of blood flow can result in chronic leg
                         pain and, when the disease is advanced, open sores, and
                         possibly amputation.
+                      </p>
+                        <p
+                        style={{
+                          textIndent: "40px"
+                        }}
+                        className="lead"
+                      >
+                        NYU Langone was the first academic medical center to
+                        receive accreditation for its Vein Center from the
+                        InterSocietal Accreditation Commission, recognizing our
+                        commitment to quality evaluation and care of patients
+                        with vein disorders. Our world-renowned surgeons and
+                        state-of-the-art facilities make the Vein Center at NYU
+                        Langone one of the top facilities for treating vein
+                        conditions. We are the only vein center in the tri-state
+                        area that is part of a large academic medical center and
+                        vascular surgeons from around the world come to NYU
+                        Langone to learn our techniques.
+                      </p>
+                      <p
+                        style={{
+                          textIndent: "40px"
+                        }}
+                        className="lead"
+                      >
+                        Our goal is to make your legs healthy and beautiful
+                        again. And we do this without a hospital admission,
+                        general anesthesia, or a lengthy recuperation period. We
+                        use minimally invasive procedures, performed in the
+                        office, and you can resume your normal activities
+                        immediately or shortly after. We treat varicose veins,
+                        spider veins, and reticular veins, as well as deep vein
+                        thrombosis, venous ulcers, and other venous disorders.
                       </p>
                     </Card.Body>
                   </Accordion.Collapse>
@@ -146,7 +196,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -170,7 +220,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -183,57 +233,16 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
+          
                 <Card className="text-center">
                   <Accordion.Toggle as={Card.Header} eventKey="5">
-                    <h5>Peripheral Vascular Disease</h5>
+                    <h5>Deep Vein Thrombosis</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="5">
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
-                        }}
-                        className="lead"
-                      >
-                        NYU Langone was the first academic medical center to
-                        receive accreditation for its Vein Center from the
-                        InterSocietal Accreditation Commission, recognizing our
-                        commitment to quality evaluation and care of patients
-                        with vein disorders. Our world-renowned surgeons and
-                        state-of-the-art facilities make the Vein Center at NYU
-                        Langone one of the top facilities for treating vein
-                        conditions. We are the only vein center in the tri-state
-                        area that is part of a large academic medical center and
-                        vascular surgeons from around the world come to NYU
-                        Langone to learn our techniques.
-                      </p>
-                      <p
-                        style={{
-                          textIndent: '40px'
-                        }}
-                        className="lead"
-                      >
-                        Our goal is to make your legs healthy and beautiful
-                        again. And we do this without a hospital admission,
-                        general anesthesia, or a lengthy recuperation period. We
-                        use minimally invasive procedures, performed in the
-                        office, and you can resume your normal activities
-                        immediately or shortly after. We treat varicose veins,
-                        spider veins, and reticular veins, as well as deep vein
-                        thrombosis, venous ulcers, and other venous disorders.
-                      </p>
-                    </Card.Body>
-                  </Accordion.Collapse>
-                </Card>
-                <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="6">
-                    <h5>Deep Vein Thrombosis</h5>
-                  </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="6">
-                    <Card.Body>
-                      <p
-                        style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -247,7 +256,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -265,14 +274,14 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="7">
+                  <Accordion.Toggle as={Card.Header} eventKey="6">
                     <h5>Aortic Anuerysms</h5>
                   </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="7">
+                  <Accordion.Collapse eventKey="6">
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -284,14 +293,14 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="8">
+                  <Accordion.Toggle as={Card.Header} eventKey="7">
                     <h5>Cerebrovascular Disease</h5>
                   </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="8">
+                  <Accordion.Collapse eventKey="7">
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -306,8 +315,16 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="9">
+                  <Accordion.Toggle as={Card.Header} eventKey="8">
                     <h5>Lymphedema</h5>
+                  </Accordion.Toggle>
+                  <Accordion.Collapse eventKey="8">
+                    <Card.Body />
+                  </Accordion.Collapse>
+                </Card>
+                <Card className="text-center">
+                  <Accordion.Toggle as={Card.Header} eventKey="9">
+                    <h5>Renal and Mesenteric Arterial Disease</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="9">
                     <Card.Body />
@@ -315,33 +332,25 @@ class Specialties extends Component {
                 </Card>
                 <Card className="text-center">
                   <Accordion.Toggle as={Card.Header} eventKey="10">
-                    <h5>Renal and Mesenteric Arterial Disease</h5>
+                    <h5>Dialysis Access</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="10">
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="11">
-                    <h5>Dialysis Access</h5>
-                  </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="11">
-                    <Card.Body />
-                  </Accordion.Collapse>
-                </Card>
-                <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="12">
+                  <Accordion.Toggle as={Card.Header} eventKey="13">
                     <h5>Thoracic Outlet Syndrome</h5>
                   </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="12">
+                  <Accordion.Collapse eventKey="13">
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="12">
+                  <Accordion.Toggle as={Card.Header} eventKey="14">
                     <h5>Pelvic Congestion Syndrome</h5>
                   </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="12">
+                  <Accordion.Collapse eventKey="14">
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>

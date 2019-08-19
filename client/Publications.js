@@ -23,11 +23,12 @@ class Publications extends Component {
         <Container className="d-flex flex-row-wrap pt-5 mt-5">
           <Row className="justify-content-start">
             {/* card */}
-            <Col xs={10} md={3} className="p-3">
+            <Col xs={12} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
-                  padding: 2
+                  padding: 2,
+                  marginTop: 5
                 }}
               >
                 <Card.Body>
@@ -42,9 +43,7 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-            </Col>
-            {/* card */}
-            <Col xs={10} md={3} className="p-3">
+
               <Card
                 style={{
                   borderWidth: '2px',
@@ -66,11 +65,12 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs={10} md={3} className="p-3">
+            <Col xs={12} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
-                  padding: 2
+                  padding: 2,
+                  marginTop: 5
                 }}
               >
                 <Card.Body>
@@ -85,9 +85,7 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-            </Col>
-            {/* card */}
-            <Col xs={10} md={3} className="p-3">
+
               <Card
                 style={{
                   borderWidth: '2px',
@@ -107,11 +105,12 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs={10} md={3} className="p-3">
+            <Col xs={12} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
-                  padding: 2
+                  padding: 2,
+                  marginTop: 5
                 }}
               >
                 <Card.Body>
@@ -126,9 +125,7 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-            </Col>
-            {/* card */}
-            <Col xs={10} md={3} className="p-3">
+
               <Card
                 style={{
                   borderWidth: '2px',
@@ -149,11 +146,12 @@ class Publications extends Component {
               </Card>
             </Col>
             {/* card */}
-            <Col xs={10} md={3} className="p-3">
+            <Col xs={12} md={3} className="p-3">
               <Card
                 style={{
                   borderWidth: '2px',
-                  padding: 2
+                  padding: 2,
+                  marginTop: 5
                 }}
               >
                 <Card.Body>
@@ -167,9 +165,8 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-            </Col>
-            <Col xs={10} md={3} className="p-2">
-              <Container
+
+              <div
                 className="rg-plugin"
                 data-stats="true"
                 data-faces="true"
