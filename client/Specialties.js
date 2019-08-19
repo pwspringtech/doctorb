@@ -2,6 +2,13 @@ import React, { Component, Fragment } from 'react';
 import { Accordion, Card, Col, Container, Row } from 'react-bootstrap';
 
 class Specialties extends Component {
+
+  // componentDidMount() {
+  //   if (this.props.eventKey) {
+  //     ('#1').collapse('show')
+  //   }
+  // }
+
   render() {
     return (
       <Fragment>

@@ -14,12 +14,14 @@ import UpdateEVLA from './UpdateEVLA';
 import Contact from './Contact';
 import About from './About';
 import Show from './Show';
+import ScrollToTop from './ScrollToTop';
 
 class App extends Component {
   render() {
     return (
       <Fragment>
         <HashRouter>
+          <ScrollToTop>
           <Navigation />
           <Switch>
             <Route exact path="/" component={Home} />
@@ -52,6 +54,7 @@ class App extends Component {
             <Route exact path="/show" component={Show} />
           </Switch>
           <Footer />
+          </ScrollToTop>
         </HashRouter>
       </Fragment>
     );
