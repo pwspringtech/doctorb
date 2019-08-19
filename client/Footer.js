@@ -38,12 +38,12 @@ class Footer extends Component {
                     {/* <li><a href="#Specialties/1" >Endovascular Surgery </a></li> */}
                     <li><Link to="Specialties/0" >Vascular Surgery </Link></li>
                     <li><Link to="#Specialties/1" >Endovascular Surgery </Link></li>
-                    <li><a href="#Specialties/2" >Peripheral Vascular Disease </a></li>
-                    <li><a href="#Specialties/3" >Angioplasty / Stenting </a></li>
-                    <li><a href="#Specialties/4" > Venous Disease</a></li>
-                    <li><a href="#Specialties/5" > Deep Vein Thrombosis </a> </li>
-                    <li><a href="#Specialties/6" >Aortic Anuerysms </a></li>
-                    <li><a href="#Specialties/7" >Cerebrovascular Disease </ a></li>
+                    <li><Link to="#Specialties/2" >Peripheral Vascular Disease </Link></li>
+                    <li><Link to="#Specialties/3" >Angioplasty / Stenting </Link></li>
+                    <li><Link to="#Specialties/4" > Venous Disease</Link></li>
+                    <li><Link to="#Specialties/5" > Deep Vein Thrombosis </Link> </li>
+                    <li><Link to="#Specialties/6" >Aortic Anuerysms </Link></li>
+                    <li><Link to="#Specialties/7" >Cerebrovascular Disease </Link></li>
                   </ul>
                 </Col>
                 <Col lg={6} className="mt-4">
