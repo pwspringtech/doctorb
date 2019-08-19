@@ -2,6 +2,19 @@ import React, { Component, Fragment } from "react";
 import { Accordion, Card, Col, Container, Row } from "react-bootstrap";
 
 class Specialties extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      defaultActiveKey: this.props.match.params.dak
+    }
+  }
+
+  componentDidMount(){
+    console.log(this.props.match.params)
+    this.setState({ defaultActiveKey: this.props.match.params.dak})
+    console.log(this.state.defaultActiveKey)
+  }
+
   render() {
     return (
       <Fragment>
@@ -21,7 +34,7 @@ class Specialties extends Component {
           </Col>
           <Row className="justify-content-center mb-4">
             <Col xs="10" xl="6">
-              <Accordion>
+              <Accordion defaultActiveKey={this.state.defaultActiveKey}>
                 <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
