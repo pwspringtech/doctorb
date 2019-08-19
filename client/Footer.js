@@ -6,6 +6,7 @@ import { SocialIcon } from 'react-social-icons';
 import { Link } from 'react-router-dom';
 
 class Footer extends Component {
+
   render() {
     return (
       <Container fluid={true} className="bg-light">
