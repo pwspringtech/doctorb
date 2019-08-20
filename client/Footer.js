@@ -4,48 +4,100 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { SocialIcon } from 'react-social-icons';
 import { Link } from 'react-router-dom';
+import Map from './Map';
 
 class Footer extends Component {
-
   render() {
     return (
       <Container fluid={true} className="bg-light">
         <Row>
           <Container>
             <Row className="mb-5">
-                <Col sm className="mt-5">
-                  <Link to="/" className="text-dark"><h6>Home</h6></Link>
-                  <Link to="/about" className="text-dark"><h6>About</h6></Link>
-                  <Link to="/publications" className="text-dark"><h6>Publications</h6></Link>
-                  <Link to="/show" className="text-dark">
-                    <h6>
-                      <i>Vascular Surgery Show</i> SiriusXM
-                    </h6>
-                  </Link>
-                  <Link to="/contact" className="text-dark"><h6>Contact</h6></Link>
-                  <p>
-                    Tel: <a href="tel:2122635060">212-263-5060</a>
-                  </p>
-                  <SocialIcon url="https://www.linkedin.com/in/todd-berland-5228ab19/" style={{ height: 40, width: 40 }} />
-                  <SocialIcon url="https://twitter.com/VascularDr" style={{ height: 40, width: 40 }} className="ml-2 mr-2" />
-                  <SocialIcon url="https://www.instagram.com/thevasculardr/" style={{ height: 40, width: 40 }} />
-                </Col>
-                <Col sm className="mt-5">
-                  <Link to="/specialties" className="text-dark"><h6>Specialties</h6></Link>
-                  <ul>
-                    <li><Link to="Specialties/0" >Vascular Surgery </Link></li>
-                    <li><Link to="#Specialties/1" >Endovascular Surgery </Link></li>
-                    <li><Link to="#Specialties/2" >Peripheral Vascular Disease </Link></li>
-                    <li><Link to="#Specialties/3" >Angioplasty / Stenting </Link></li>
-                    <li><Link to="#Specialties/4" > Venous Disease</Link></li>
-                    <li><Link to="#Specialties/5" > Deep Vein Thrombosis </Link> </li>
-                    <li><Link to="#Specialties/6" >Aortic Anuerysms </Link></li>
-                    <li><Link to="#Specialties/7" >Cerebrovascular Disease </Link></li>
-                  </ul>
-                </Col>
-                <Col lg={6} className="mt-4">
-                  <img className="img-fluid" alt="static Mapbox map of the NYU Langone Medical Center" src="https://api.mapbox.com/styles/v1/wgriffin13/cjz4lr6nr01lb1co0n3j94lok/static/-73.9731,40.742,14,0,0/600x400@2x?access_token=pk.eyJ1Ijoid2dyaWZmaW4xMyIsImEiOiJjanNmZThqZTgwNTY2NDR0N2FpcWhiN21yIn0.z913-AGo9Vpf6OLehajKgQ" />
-                </Col>
+              <Col sm className="mt-5">
+                <Link to="/" className="text-dark">
+                  <h6>Home</h6>
+                </Link>
+                <Link to="/about" className="text-dark">
+                  <h6>About</h6>
+                </Link>
+                <Link to="/publications" className="text-dark">
+                  <h6>Publications</h6>
+                </Link>
+                <Link to="/show" className="text-dark">
+                  <h6>
+                    <i>Vascular Surgery Show</i> SiriusXM
+                  </h6>
+                </Link>
+                <Link to="/contact" className="text-dark">
+                  <h6>Contact</h6>
+                </Link>
+                <p>
+                  Tel: <a href="tel:2122635060">212-263-5060</a>
+                </p>
+                <SocialIcon
+                  url="https://www.linkedin.com/in/todd-berland-5228ab19/"
+                  style={{ height: 40, width: 40 }}
+                />
+                <SocialIcon
+                  url="https://twitter.com/VascularDr"
+                  style={{ height: 40, width: 40 }}
+                  className="ml-2 mr-2"
+                />
+                <SocialIcon
+                  url="https://www.instagram.com/thevasculardr/"
+                  style={{ height: 40, width: 40 }}
+                />
+              </Col>
+              <Col sm className="mt-5">
+                <Link to="/specialties" className="text-dark">
+                  <h6>Specialties</h6>
+                </Link>
+                <ul>
+                  <li>
+                    <Link to="/specialties/0" className="text-dark">
+                      Vascular Surgery
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialties/1" className="text-dark">
+                      Endovascular Surgery
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialties/2" className="text-dark">
+                      Peripheral Vascular Disease
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialties/3" className="text-dark">
+                      Angioplasty / Stenting
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialties/4" className="text-dark">
+                      Venous Disease
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialties/5" className="text-dark">
+                      Deep Vein Thrombosis
+                    </Link>{' '}
+                  </li>
+                  <li>
+                    <Link to="/specialties/6" className="text-dark">
+                      Aortic Anuerysms
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/specialties/7" className="text-dark">
+                      Cerebrovascular Disease
+                    </Link>
+                  </li>
+                </ul>
+              </Col>
+              <Col lg={6} className="mt-4">
+                <Map />
+              </Col>
             </Row>
           </Container>
         </Row>

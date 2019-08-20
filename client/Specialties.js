@@ -5,12 +5,23 @@ class Specialties extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      defaultActiveKey: this.props.match.params.dak
+      activeKey: null
     };
   }
 
+  componentDidMount() {
+    this.setState({ activeKey: this.props.match.params.dak });
+  }
+
+  componentDidUpdate(prevProps) {
+    // Typical usage (don't forget to compare props):
+    if (this.props !== prevProps) {
+      this.setState({ activeKey: this.props.match.params.dak });
+    }
+  }
+
   render() {
-    const dak = this.state.defaultActiveKey;
+    const activeKey = this.state.activeKey;
     return (
       <Fragment>
         <Container
@@ -29,7 +40,7 @@ class Specialties extends Component {
           </Col>
           <Row className="justify-content-center mb-4">
             <Col xs="10" xl="6">
-              <Accordion defaultActiveKey={dak}>
+              <Accordion activeKey={activeKey}>
                 <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
