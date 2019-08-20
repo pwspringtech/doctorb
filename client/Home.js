@@ -2,23 +2,22 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed'
+import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
 import Image from 'react-bootstrap/Image';
-
 
 class Home extends Component {
   render() {
     return (
       <Container className="d-flex flex-column" fluid>
         <Row className="pt-5 mt-5">
-        <Col md={3} xl={3}>
-          <Image
+          <Col md={3} xl={3}>
+            <Image
               className="border shadow p-2 bg-white rounded"
               src="/toddberland-500px.jpg"
               fluid
             />
           </Col>
-          <Col  className="mt-4 ml-1">
+          <Col className="mt-4 ml-1">
             <p style={{ textIndent: '40px' }} className="lead">
               Dr. Berland is a world renowned vascular surgeon based in New York
               City. He is listed in Castle Connolly “America’s Top Doctors” for
@@ -44,18 +43,16 @@ class Home extends Component {
               is currently the Director of Outpatient Vascular Interventions.
               Dr. Berland speaks nationally and internationally.
             </p>
-           
           </Col>
         </Row>
         <Row className="mt-4 justify-content-center">
-          
-          <Col md={6} >
+          <Col md={6}>
             <ResponsiveEmbed
               aspect="16by9"
               style={{
                 position: 'relative',
                 paddingBottom: '56.25%',
-                height: 0,
+                height: 0
               }}
             >
               <embed
@@ -64,13 +61,11 @@ class Home extends Component {
                 style={{
                   position: 'absolute',
                   top: 0,
-                  left: 0,
-
+                  left: 0
                 }}
               />
             </ResponsiveEmbed>
           </Col>
-         
         </Row>
       </Container>
     );

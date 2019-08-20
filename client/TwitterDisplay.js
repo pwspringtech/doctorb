@@ -32,7 +32,7 @@ class TwitterDisplay extends Component {
       <Container>
         <Row>
           {/* Use 'md=' to determine the width of the Twitter widget for computer screens */}
-          <Col md={12}>
+          <Col xs xl={12}>
             <a
               className="twitter-timeline"
               href="https://twitter.com/VascularDr?ref_src=twsrc%5Etfw"
