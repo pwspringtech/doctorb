@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { SocialIcon } from 'react-social-icons';
-
 import { Link } from 'react-router-dom';
 
 class Footer extends Component {
@@ -34,8 +33,6 @@ class Footer extends Component {
                 <Col sm className="mt-5">
                   <Link to="/specialties" className="text-dark"><h6>Specialties</h6></Link>
                   <ul>
-                    {/* <li><a href="#Specialties/0" >Vascular Surgery </a></li> */}
-                    {/* <li><a href="#Specialties/1" >Endovascular Surgery </a></li> */}
                     <li><Link to="Specialties/0" >Vascular Surgery </Link></li>
                     <li><Link to="#Specialties/1" >Endovascular Surgery </Link></li>
                     <li><Link to="#Specialties/2" >Peripheral Vascular Disease </Link></li>

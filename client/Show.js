@@ -2,53 +2,41 @@ import React, { Component, Fragment } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
 import TwitterDisplay from './TwitterDisplay';
+import ContactForm from './ContactForm';
 
 class Show extends Component {
   render() {
     return (
       <Fragment>
         <Container
-          className="d-flex flex-stretch"
-          style={{ marginTop: '120px' }}
+          className="d-flex flex-column p-3"
+          style={{ marginTop: '70px' }}
         >
-          <Row xl={6} className="justify-content-center">
-            <Col>
-              <Row style={{ height: '80px' }}>
+              <Row className="align-items-center" >
                 <Image
                   src="/show-pics/VascularSurgery.png"
                   alt="Vascular Surgery Show"
-                  height="90px"
+                  height="80px"
                   className="ml-2"
                 />
+       
                 <Image
                   src="/show-pics/DoctorRadio.png"
                   alt="Vascular Surgery Show"
-                  width="120px"
-                  className="ml-2"
+                  // width="120px"
+                  height="140px"
+                  className="ml-1"
                 />
               </Row>
+          <Row xl={12} className="justify-content-center">
+            <Col >
 
-              <Row
-                style={{ height: '40px' }}
-                className="justify-content-start mt-3 mb-3 ml-4"
-              >
-                <Image
-                  src="/show-pics/SiriusXM_grey.png"
-                  alt="Vascular Surgery Show"
-                  height="40px"
-                />
-                <Image
-                  src="/show-pics/Channel-110-grey.png"
-                  alt="Vascular Surgery Show"
-                  height="28px"
-                  className="ml-2 pt-2"
-                />
-              </Row>
-
-              <Carousel className="ml-2 mb-3">
+        
+              <Carousel className="ml-2 mb-3 mt-1">
                 <Carousel.Item>
                   <Image
                     style={{ height: '350px' }}
@@ -75,7 +63,25 @@ class Show extends Component {
                 </Carousel.Item>
               </Carousel>
 
-              <h5 className="mb-3 ml-5 mt-2">Vascular Disease & Treatments</h5>
+                    <Row
+                style={{ height: '40px' }}
+                className="justify-content-start mt-3 mb-3 ml-4"
+              >
+                <Image
+                  src="/show-pics/SiriusXM_grey.png"
+                  alt="Vascular Surgery Show"
+                  height="40px"
+                />
+                <Image
+                  src="/show-pics/Channel-110-grey.png"
+                  alt="Vascular Surgery Show"
+                  height="28px"
+                  className="ml-2 pt-2"
+                />
+              </Row>
+
+
+              {/* <h5 className="mb-3 ml-5 mt-2">Vascular Disease & Treatments</h5> */}
 
               <h5 className="mt-2 pt-3">
                 Dr. Todd Berland{' '}
@@ -90,13 +96,17 @@ class Show extends Component {
                   available via SiriusXM.
                 </small>
               </h5>
+              <Button > message Dr. Berland </Button>
             </Col>
             <Col>
               <Col>
                 <TwitterDisplay twitterLoaded={false} />
               </Col>
             </Col>
+            <ContactForm />
           </Row>
+          
+          
         </Container>
       </Fragment>
     );
