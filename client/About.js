@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
 import Image from 'react-bootstrap/Image';
+import { FaFilePdf } from 'react-icons/fa';
 
 class About extends Component {
   render() {
     return (
-      <Container>
+      <Container className="d-flex flex-column">
         <Row className="pt-5 mt-5 mb-2">
-          <Col md={3} xl={3}>
+          <Col md={3} xl={4}>
             <Image
               className="border shadow p-2 bg-white rounded"
               src="/toddberland-500px.jpg"
@@ -45,8 +48,17 @@ class About extends Component {
             </p>
           </Col>
         </Row>
-        <Row className="mt-4 justify-content-center">
-          <Col md={6}>
+        <Row className="mt-4 mb-4 justify-content-center">
+          <Button href="/cv.pdf">
+            <Row className="justify-content-center">
+              <Col style={{ fontSize: '18px' }}>
+                Curriculum Vitae {<FaFilePdf className="mb-1 ml-1" />}
+              </Col>
+            </Row>
+          </Button>
+        </Row>
+        <Row>
+          <Col xl="8">
             <ResponsiveEmbed
               aspect="16by9"
               style={{
@@ -65,6 +77,27 @@ class About extends Component {
                 }}
               />
             </ResponsiveEmbed>
+          </Col>
+          <Col xs={12} xl={4}>
+            <Card>
+              <Card.Body>
+                <Card.Img variant="top" src="/show-pics/operating.jpg" />
+                {/* <Card.Title className="mt-2">
+                  Chance Favors the Prepared
+                </Card.Title> */}
+                <h4 className="mt-2"> Chance Favors the Prepared</h4>
+                <p style={{ fontSize: '14px' }}>
+                  <i>by Danielle Wong Moores</i>
+                </p>
+                <Card.Text>
+                  Surgeon, innovator, radio host — Dr. Todd Berland is always
+                  looking for the next opportunity.
+                </Card.Text>
+                <Card.Link href="http://magazines.augusta.edu/2018/12/21/chance-favors-the-prepared/">
+                  read full article
+                </Card.Link>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>
