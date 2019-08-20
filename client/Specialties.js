@@ -1,27 +1,39 @@
 import React, { Component, Fragment } from 'react';
-import { Accordion, Card, Col, Container, Row } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Accordion from 'react-bootstrap/Accordion';
+import useAccordionToggle from 'react-bootstrap/useAccordionToggle';
+import Button from 'react-bootstrap/Button';
 
 class Specialties extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeKey: null
+      // eventKey: null,
+      defaultActiveKey: null
     };
   }
 
   componentDidMount() {
-    this.setState({ activeKey: this.props.match.params.dak });
+    // console.log('sliced ', this.props.match.params.dak.slice(1, 5));
+    if (this.props.match.params.dak.slice(1, 5) !== null) {
+      this.setState({ defaultActiveKey: this.props.match.params.dak });
+    }
   }
 
   componentDidUpdate(prevProps) {
     // Typical usage (don't forget to compare props):
     if (this.props !== prevProps) {
-      this.setState({ activeKey: this.props.match.params.dak });
+      // console.log('prevProps ', prevProps);
+      // console.log('this.props.match.params.dak ', this.props.match.params.dak);
+      this.setState({ defaultActiveKey: this.props.match.params.dak });
     }
   }
 
   render() {
-    const activeKey = this.state.activeKey;
+    // const activeKey = this.state.defaultActiveKey;
     return (
       <Fragment>
         <Container
@@ -31,7 +43,7 @@ class Specialties extends Component {
         >
           <Col className="m-2">
             <Row className="justify-content-center mt-4 mb-3">
-              <h4> Dr. Todd Berland specializes in:</h4>
+              <h5> Dr. Todd Berland specializes in:</h5>
             </Row>
 
             <Row className="justify-content-center mb-3">
@@ -39,14 +51,13 @@ class Specialties extends Component {
             </Row>
           </Col>
           <Row className="justify-content-center mb-4">
-            <Col xs="10" xl="6">
-              <Accordion activeKey={activeKey}>
+            <Col xs="12" xl="6">
+              <Accordion
+                // activeKey={activeKey}
+                defaultActiveKey={this.state.defaultActiveKey}
+              >
                 <Card className="text-center">
-                  <Accordion.Toggle
-                    as={Card.Header}
-                    variant="link"
-                    eventKey="0"
-                  >
+                  <Accordion.Toggle as={Card.Header} eventKey="0">
                     <h5>Vascular Surgery</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="0">
@@ -360,6 +371,20 @@ class Specialties extends Component {
       </Fragment>
     );
   }
+}
+
+function CustomToggle({ children, eventKey }) {
+  const updateState = useAccordionToggle(eventKey, () =>
+    React.useState({ eventKey: eventKey }));
+  return (
+    <Button
+      type="button"
+      style={{ backgroundColor: 'pink' }}
+      onClick={updateState}
+    >
+      {children}
+    </Button>
+  );
 }
 
 export default Specialties;
