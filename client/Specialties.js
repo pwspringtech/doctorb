@@ -1,43 +1,34 @@
-import React, { Component, Fragment } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Accordion from 'react-bootstrap/Accordion';
-import useAccordionToggle from 'react-bootstrap/useAccordionToggle';
-import Button from 'react-bootstrap/Button';
+import React, { Component, Fragment } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Accordion from "react-bootstrap/Accordion";
 
 class Specialties extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // eventKey: null,
       defaultActiveKey: null
     };
   }
 
   componentDidMount() {
-    // console.log('sliced ', this.props.match.params.dak.slice(1, 5));
-    if (this.props.match.params.dak.slice(1, 5) !== null) {
-      this.setState({ defaultActiveKey: this.props.match.params.dak });
-    }
+    this.setState({ defaultActiveKey: this.props.match.params.dak });
   }
 
   componentDidUpdate(prevProps) {
     // Typical usage (don't forget to compare props):
     if (this.props !== prevProps) {
-      // console.log('prevProps ', prevProps);
-      // console.log('this.props.match.params.dak ', this.props.match.params.dak);
       this.setState({ defaultActiveKey: this.props.match.params.dak });
     }
   }
 
   render() {
-    // const activeKey = this.state.defaultActiveKey;
     return (
       <Fragment>
         <Container
-          style={{ marginTop: '80px' }}
+          style={{ marginTop: "80px" }}
           className="d-flex flex-column"
           fluid
         >
@@ -52,10 +43,7 @@ class Specialties extends Component {
           </Col>
           <Row className="justify-content-center mb-4">
             <Col xs="12" xl="6">
-              <Accordion
-                // activeKey={activeKey}
-                defaultActiveKey={this.state.defaultActiveKey}
-              >
+              <Accordion defaultActiveKey={this.state.defaultActiveKey}>
                 <Card className="text-center">
                   <Accordion.Toggle as={Card.Header} eventKey="0">
                     <h5>Vascular Surgery</h5>
@@ -64,7 +52,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -94,7 +82,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -114,7 +102,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -127,7 +115,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -151,7 +139,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -164,7 +152,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -182,7 +170,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -206,7 +194,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -230,7 +218,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -252,7 +240,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -266,7 +254,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -291,7 +279,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -310,7 +298,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -371,20 +359,6 @@ class Specialties extends Component {
       </Fragment>
     );
   }
-}
-
-function CustomToggle({ children, eventKey }) {
-  const updateState = useAccordionToggle(eventKey, () =>
-    React.useState({ eventKey: eventKey }));
-  return (
-    <Button
-      type="button"
-      style={{ backgroundColor: 'pink' }}
-      onClick={updateState}
-    >
-      {children}
-    </Button>
-  );
 }
 
 export default Specialties;
