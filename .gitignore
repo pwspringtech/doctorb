@@ -3,4 +3,5 @@ node_modules
 public/bundle.js
 public/bundle.js.map
 client/archive.js
+client/SpecialtiesHookFail.js
 seed_files/

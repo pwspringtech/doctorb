@@ -81,7 +81,7 @@ class Footer extends Component {
                   <li>
                     <Link to="/specialties/5" className="text-dark">
                       Deep Vein Thrombosis
-                    </Link>{' '}
+                    </Link>
                   </li>
                   <li>
                     <Link to="/specialties/6" className="text-dark">
