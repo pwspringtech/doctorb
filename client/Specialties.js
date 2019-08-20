@@ -1,32 +1,31 @@
-import React, { Component, Fragment } from "react";
-import { Accordion, Card, Col, Container, Row } from "react-bootstrap";
+import React, { Component, Fragment } from 'react';
+import { Accordion, Card, Col, Container, Row } from 'react-bootstrap';
 
 class Specialties extends Component {
-
-  constructor(props){
-    super(props)
+  constructor(props) {
+    super(props);
     this.state = {
       activeKey: null
-    }
+    };
   }
 
   componentDidMount() {
-    this.setState({activeKey: this.props.match.params.dak})
+    this.setState({ activeKey: this.props.match.params.dak });
   }
 
   componentDidUpdate(prevProps) {
     // Typical usage (don't forget to compare props):
     if (this.props !== prevProps) {
-      this.setState({activeKey: this.props.match.params.dak})
+      this.setState({ activeKey: this.props.match.params.dak });
     }
   }
 
   render() {
-    const activeKey = this.state.activeKey
+    const activeKey = this.state.activeKey;
     return (
       <Fragment>
         <Container
-          style={{ marginTop: "80px" }}
+          style={{ marginTop: '80px' }}
           className="d-flex flex-column"
           fluid
         >
@@ -54,7 +53,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -84,7 +83,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -104,7 +103,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -117,7 +116,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -141,7 +140,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -152,9 +151,9 @@ class Specialties extends Component {
                         pain and, when the disease is advanced, open sores, and
                         possibly amputation.
                       </p>
-                        <p
+                      <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -172,7 +171,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -196,7 +195,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -220,7 +219,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -233,7 +232,7 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-          
+
                 <Card className="text-center">
                   <Accordion.Toggle as={Card.Header} eventKey="5">
                     <h5>Deep Vein Thrombosis</h5>
@@ -242,7 +241,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -256,7 +255,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -281,7 +280,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >
@@ -300,7 +299,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: "40px"
+                          textIndent: '40px'
                         }}
                         className="lead"
                       >

@@ -23,7 +23,7 @@ class Contact extends Component {
                             <a href="tel:2122635060"><h6>212-263-5060</h6></a>
                         </Row>
                     </Col>
-                    <Col xs={12} md={8}>
+                    <Col xs={10} md={6}>
                         <ContactForm />
                     </Col>
                 </Row>
