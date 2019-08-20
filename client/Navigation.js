@@ -34,7 +34,7 @@ class Navigation extends Component {
                   </Col>
                   <Col>
                     <Nav.Item>
-                      <Nav.Link href="#specialties/:null">Specialties</Nav.Link>
+                      <Nav.Link href="#specialties">Specialties</Nav.Link>
                     </Nav.Item>
                   </Col>
                   <Col>

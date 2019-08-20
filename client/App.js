@@ -51,7 +51,7 @@ class App extends Component {
               />
               <Route exact path="/updateevla" component={UpdateEVLA} />
               <Route exact path="/show" component={Show} />
-              <Route path="/specialties/:dak?" component={Specialties} />
+              <Route exact path="/specialties/:dak?" component={Specialties} />
             </Switch>
             <Footer />
           </ScrollToTop>
