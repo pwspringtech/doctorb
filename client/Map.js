@@ -10,7 +10,7 @@ class Map extends Component {
         this.state = {
             mapRendered: false,
             viewport: {
-                height: '100%',
+                height: 275,
                 width: '100%',
                 latitude: 40.742,
                 longitude: -73.9731,
