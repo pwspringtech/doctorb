@@ -46,7 +46,7 @@ class Footer extends Component {
                     <li><Link to="/specialties/7" className="text-dark">Cerebrovascular Disease</Link></li>
                   </ul>
                 </Col>
-                <Col lg={6} className="mt-4">
+                <Col sm className="mt-4">
                   <Map />
                 </Col>
             </Row>

@@ -6,7 +6,8 @@ class Specialties extends Component {
   constructor(props){
     super(props)
     this.state = {
-      activeKey: null
+      activeKey: null,
+      accordianClicked: false
     }
   }
 
@@ -47,6 +48,7 @@ class Specialties extends Component {
                     as={Card.Header}
                     variant="link"
                     eventKey="0"
+                    onClick={() => this.setState({ activeKey: '0' })}
                   >
                     <h5>Vascular Surgery</h5>
                   </Accordion.Toggle>
@@ -77,7 +79,7 @@ class Specialties extends Component {
                 </Card>
 
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="1">
+                  <Accordion.Toggle as={Card.Header} eventKey="1" onClick={() => this.setState({ activeKey: '1' })}>
                     <h5>Endovascular Surgery</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="1">
@@ -134,7 +136,7 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="2">
+                  <Accordion.Toggle as={Card.Header} eventKey="2" onClick={() => this.setState({ activeKey: '2' })}>
                     <h5>Peripheral Vascular Disease</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="2">
@@ -189,7 +191,7 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="3">
+                  <Accordion.Toggle as={Card.Header} eventKey="3" onClick={() => this.setState({ activeKey: '3' })}>
                     <h5>Angioplasty / Stenting</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="3">
@@ -213,7 +215,7 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="4">
+                  <Accordion.Toggle as={Card.Header} eventKey="4" onClick={() => this.setState({ activeKey: '4' })}>
                     <h5>Venous Disease</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="4">
@@ -235,7 +237,7 @@ class Specialties extends Component {
                 </Card>
           
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="5">
+                  <Accordion.Toggle as={Card.Header} eventKey="5" onClick={() => this.setState({ activeKey: '5' })}>
                     <h5>Deep Vein Thrombosis</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="5">
@@ -274,7 +276,7 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="6">
+                  <Accordion.Toggle as={Card.Header} eventKey="6" onClick={() => this.setState({ activeKey: '6' })}>
                     <h5>Aortic Anuerysms</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="6">
@@ -293,7 +295,7 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="7">
+                  <Accordion.Toggle as={Card.Header} eventKey="7" onClick={() => this.setState({ activeKey: '7' })}>
                     <h5>Cerebrovascular Disease</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="7">
@@ -315,7 +317,7 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="8">
+                  <Accordion.Toggle as={Card.Header} eventKey="8" onClick={() => this.setState({ activeKey: '8' })}>
                     <h5>Lymphedema</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="8">
@@ -323,7 +325,7 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="9">
+                  <Accordion.Toggle as={Card.Header} eventKey="9" onClick={() => this.setState({ activeKey: '9' })}>
                     <h5>Renal and Mesenteric Arterial Disease</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="9">
@@ -331,7 +333,7 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="10">
+                  <Accordion.Toggle as={Card.Header} eventKey="10" onClick={() => this.setState({ activeKey: '10' })}>
                     <h5>Dialysis Access</h5>
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="10">
@@ -339,18 +341,18 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="13">
+                  <Accordion.Toggle as={Card.Header} eventKey="11" onClick={() => this.setState({ activeKey: '11' })}>
                     <h5>Thoracic Outlet Syndrome</h5>
                   </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="13">
+                  <Accordion.Collapse eventKey="11">
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
                 <Card className="text-center">
-                  <Accordion.Toggle as={Card.Header} eventKey="14">
+                  <Accordion.Toggle as={Card.Header} eventKey="12" onClick={() => this.setState({ activeKey: '12' })}>
                     <h5>Pelvic Congestion Syndrome</h5>
                   </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="14">
+                  <Accordion.Collapse eventKey="12">
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
