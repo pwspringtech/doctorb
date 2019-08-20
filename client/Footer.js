@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import Map from './Map';
 
 class Footer extends Component {
-
   render() {
     return (
       <Container fluid={true} className="bg-light">
