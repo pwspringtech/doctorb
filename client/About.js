@@ -12,13 +12,21 @@ class About extends Component {
   render() {
     return (
       <Container className="d-flex flex-column">
-        <Row className="pt-5 mt-5 mb-2">
-          <Col md={3} xl={4}>
-            <Image
-              className="border shadow p-2 bg-white rounded"
-              src="/toddberland-500px.jpg"
-              fluid
-            />
+        <Row className="justify-content-center pt-5 mt-5 mb-2">
+          <Col md={6} xs={11}>
+            <Row className="justify-content-center">
+              <Image
+                className="border shadow p-2 bg-white rounded"
+                src="/toddberland-500px.jpg"
+                fluid
+              />
+
+              <Button href="/cv.pdf" className="mt-3">
+                <Col style={{ fontSize: '18px' }}>
+                  Curriculum Vitae {<FaFilePdf className="mb-1 ml-1" />}
+                </Col>
+              </Button>
+            </Row>
           </Col>
           <Col className="mt-4 ml-1">
             <p style={{ textIndent: '40px' }} className="lead">
@@ -48,17 +56,9 @@ class About extends Component {
             </p>
           </Col>
         </Row>
-        <Row className="mt-4 mb-4 justify-content-center">
-          <Button href="/cv.pdf">
-            <Row className="justify-content-center">
-              <Col style={{ fontSize: '18px' }}>
-                Curriculum Vitae {<FaFilePdf className="mb-1 ml-1" />}
-              </Col>
-            </Row>
-          </Button>
-        </Row>
+
         <Row>
-          <Col xl="8">
+          <Col xl="7">
             <ResponsiveEmbed
               aspect="16by9"
               style={{
@@ -78,7 +78,7 @@ class About extends Component {
               />
             </ResponsiveEmbed>
           </Col>
-          <Col xs={12} xl={4}>
+          <Col xs={12} xl={5}>
             <Card>
               <Card.Body>
                 <Card.Img variant="top" src="/show-pics/operating.jpg" />

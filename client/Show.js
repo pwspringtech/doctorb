@@ -24,26 +24,18 @@ class Show extends Component {
         <Container
           className="d-flex flex-column p-3"
           style={{ marginTop: '70px' }}
-          // fluid
         >
-          <Row className="justify-content-center p-3">
-            <Col>
-              <Row xs={10} xl={12} className="mb-3">
+          <Row className="justify-content-between p-3">
+            <Col className="pl-5 pr-5">
+              <Row xs={10} xl={10} className="mb-3">
                 <Image
                   src="/show-pics/VascularSurgery-DrRadio-logo.png"
                   alt="Vascular Surgery Show"
                   height="70px"
                   // className="ml-2"
                 />
-
-                {/* <Image
-              src="/show-pics/DoctorRadio.png"
-              alt="Vascular Surgery Show"
-              height="100px"
-              className="ml-1"
-            /> */}
               </Row>
-              <Carousel className="ml-2 mb-3 mt-1">
+              <Carousel>
                 <Carousel.Item>
                   <Image
                     style={{ height: '350px' }}
@@ -72,12 +64,12 @@ class Show extends Component {
 
               <Row
                 style={{ height: '40px' }}
-                className="justify-content-start mt-3 mb-3 ml-4"
+                className="justify-content-start mt-3 mb-1 ml-4"
               >
                 <Image
                   src="/show-pics/SiriusXM_grey.png"
                   alt="Vascular Surgery Show"
-                  height="40px"
+                  height="32px"
                 />
                 <Image
                   src="/show-pics/Channel-110-grey.png"
@@ -87,9 +79,8 @@ class Show extends Component {
                 />
               </Row>
 
-              {/* <h5 className="mb-3 ml-5 mt-2">Vascular Disease & Treatments</h5> */}
-              <Row className="p-3">
-                <h5 className="mt-2 pt-3">
+              <Row className="justify-content-center">
+                <h5>
                   Dr. Todd Berland{' '}
                   <small>
                     discusses vascular health as well as diseases of the
