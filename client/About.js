@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
 import Image from 'react-bootstrap/Image';
+import Figure from 'react-bootstrap/Figure';
 import { FaFilePdf } from 'react-icons/fa';
 
 class About extends Component {
@@ -21,7 +22,15 @@ class About extends Component {
                 fluid
               />
 
-              <Button href="/cv.pdf" className="mt-3">
+              <Button
+                href="/cv.pdf"
+                className="mt-5"
+                style={{
+                  background: '#74b4ca',
+                  color: 'white',
+                  borderColor: 'grey'
+                }}
+              >
                 <Col style={{ fontSize: '18px' }}>
                   Curriculum Vitae {<FaFilePdf className="mb-1 ml-1" />}
                 </Col>
@@ -57,8 +66,15 @@ class About extends Component {
           </Col>
         </Row>
 
-        <Row>
-          <Col xl="7">
+        <Row className="justify-content-center">
+          <Col
+            xl="7"
+            // style={{
+            //   backgroundColor: '#74b4ca',
+            //   paddingTop: 8,
+            //   paddingBottom: 8
+            // }}
+          >
             <ResponsiveEmbed
               aspect="16by9"
               style={{
@@ -67,7 +83,9 @@ class About extends Component {
                 height: 0
               }}
             >
-              <embed
+              <video
+                controls
+                poster="/vidPoster.png"
                 type="video/mp4"
                 src="/Todd-Berland-MD.mp4"
                 style={{
@@ -78,13 +96,18 @@ class About extends Component {
               />
             </ResponsiveEmbed>
           </Col>
-          <Col xs={12} xl={5}>
-            <Card>
+        </Row>
+        <Row className="justify-content-center">
+          <Col xs={12} xl={5} className="pt-4 pb-2">
+            <Card
+              style={{
+                borderWidth: 3,
+                borderColor: '#74b4ca'
+              }}
+            >
               <Card.Body>
                 <Card.Img variant="top" src="/show-pics/operating.jpg" />
-                {/* <Card.Title className="mt-2">
-                  Chance Favors the Prepared
-                </Card.Title> */}
+
                 <h4 className="mt-2"> Chance Favors the Prepared</h4>
                 <p style={{ fontSize: '14px' }}>
                   <i>by Danielle Wong Moores</i>

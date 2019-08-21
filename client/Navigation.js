@@ -16,7 +16,7 @@ class Navigation extends Component {
             collapseOnSelect
             style={{
               borderStyle: 'solid',
-              borderWidth: '1px 3px 3px 3px',
+              borderWidth: '3px 0px 3px 0px',
               borderColor: '#74b4ca',
               padding: 0,
               paddingRight: 5,
@@ -33,29 +33,46 @@ class Navigation extends Component {
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="justify-content-center">
+                <Nav
+                  className="justify-content-center "
+                  style={{ textTransform: 'uppercase' }}
+                  justify
+                  // fill
+                >
                   <Nav.Item>
-                    <Nav.Link href="#about">About</Nav.Link>
+                    <Nav.Link href="#about" className="text-dark">
+                      About
+                    </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="#specialties">Specialties</Nav.Link>
+                    <Nav.Link href="#specialties" className="text-dark">
+                      Specialties
+                    </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="#publications">Publications</Nav.Link>
+                    <Nav.Link href="#publications" className="text-dark">
+                      Publications
+                    </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="#awareness">Patient Awareness</Nav.Link>
+                    <Nav.Link href="#awareness" className="text-dark">
+                      Patient Awareness
+                    </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="#show">Sirius XM Show</Nav.Link>
+                    <Nav.Link href="#show" className="text-dark">
+                      Sirius XM Show
+                    </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav.Link href="#contact" className="text-dark">
+                      Contact
+                    </Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Navbar.Collapse>
