@@ -20,19 +20,21 @@ class Publications extends Component {
   render() {
     return (
       <Fragment>
-        <Container className="d-flex flex-row-wrap pt-5 mt-5">
-          <Row className="justify-content-start">
-            {/* card */}
-            <Col xs={12} md={3} className="p-3">
+        <Container className="d-flex flex-column  pt-5 mt-5" fluid>
+          <Row className="justify-content-center m-1 pb-1">
+            <Col xs={12} md={3}>
               <Card
                 style={{
-                  borderWidth: '2px',
                   padding: 2,
-                  marginTop: 5
+                  marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
-                  <Card.Link href="/publications/1000-saphenous-ablations-1.pdf">
+                  <Card.Link
+                    href="/publications/1000-saphenous-ablations-1.pdf"
+                    className="text-dark"
+                  >
                     <Card.Img
                       variant="top"
                       src="/publications/1000-saphenous-ablations-pic3.png"
@@ -43,15 +45,18 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-
               <Card
                 style={{
-                  borderWidth: '2px',
-                  padding: 2
+                  padding: 2,
+                  marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
-                  <Card.Link href="/publications/Endovascular-Creation-of-Arteriovenous.pdf">
+                  <Card.Link
+                    className="text-dark"
+                    href="/publications/Endovascular-Creation-of-Arteriovenous.pdf"
+                  >
                     <Card.Img
                       variant="top"
                       src="/publications/Endovascular-Creation-of-Arteriovenous-pic1.png"
@@ -64,17 +69,16 @@ class Publications extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            {/* card */}
-            <Col xs={12} md={3} className="p-3">
+            <Col xs={12} md={3}>
               <Card
                 style={{
-                  borderWidth: '2px',
                   padding: 2,
-                  marginTop: 5
+                  marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
-                  <Card.Link href="#arteryimbrication">
+                  <Card.Link className="text-dark" href="#arteryimbrication">
                     <Card.Img
                       variant="top"
                       src="/publications/CommonCarotidArteryImbrication-thumb.png"
@@ -85,15 +89,15 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-
               <Card
                 style={{
-                  borderWidth: '2px',
-                  padding: 2
+                  padding: 2,
+                  marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
-                  <Card.Link href="#mesentericischemia">
+                  <Card.Link className="text-dark" href="#mesentericischemia">
                     <Card.Img
                       variant="top"
                       src="/publications/Acute-Mesenteric-Ischemia-pic.jpg"
@@ -104,17 +108,19 @@ class Publications extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            {/* card */}
-            <Col xs={12} md={3} className="p-3">
+            <Col xs={12} md={3}>
               <Card
                 style={{
-                  borderWidth: '2px',
                   padding: 2,
-                  marginTop: 5
+                  marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
-                  <Card.Link href="#cysticadventitialdisease">
+                  <Card.Link
+                    className="text-dark"
+                    href="#cysticadventitialdisease"
+                  >
                     <Card.Img
                       variant="top"
                       src="/publications/Cysticadventitialdiseaseofthepoplitealartery.png"
@@ -125,15 +131,18 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-
               <Card
                 style={{
-                  borderWidth: '2px',
-                  padding: 2
+                  padding: 2,
+                  marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
-                  <Card.Link href="#IntentionalOcclusionAAA">
+                  <Card.Link
+                    className="text-dark"
+                    href="#IntentionalOcclusionAAA"
+                  >
                     <Card.Img
                       variant="top"
                       src="/publications/1000-saphenous-ablations-pic1.jpg"
@@ -145,17 +154,16 @@ class Publications extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            {/* card */}
-            <Col xs={12} md={3} className="p-3">
+            <Col xs={12} md={3}>
               <Card
                 style={{
-                  borderWidth: '2px',
                   padding: 2,
                   marginTop: 5
                 }}
+                className="shadow"
               >
                 <Card.Body>
-                  <Card.Link href="#UpdateEVLA">
+                  <Card.Link className="text-dark" href="#UpdateEVLA">
                     <Card.Img
                       variant="top"
                       src="/publications/UpdateonEndovenousLaserAblation_pic1.png"
@@ -165,18 +173,19 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-
-              <div
-                className="rg-plugin"
-                data-stats="true"
-                data-faces="true"
-                data-publications="true"
-                data-height="650"
-                data-width="330"
-                data-theme="light"
-                data-type="department"
-                data-installationId="5d54ba053d48b73a4b023cf9"
-              />
+              <Row style={{ offset: 8 }} className="justify-content-center">
+                <div
+                  className="shadow mt-3 mb-3 rg-plugin"
+                  data-stats="true"
+                  data-faces="true"
+                  data-publications="true"
+                  data-height="600"
+                  data-width="350"
+                  data-theme="light"
+                  data-type="department"
+                  data-installationId="5d5df620f8ea5243076660f2"
+                />
+              </Row>
             </Col>
           </Row>
         </Container>

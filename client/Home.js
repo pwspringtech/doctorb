@@ -2,20 +2,39 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
 import Image from 'react-bootstrap/Image';
+import { FaFilePdf } from 'react-icons/fa';
 
 class Home extends Component {
   render() {
     return (
-      <Container className="d-flex flex-column" fluid>
-        <Row className="pt-5 mt-5">
-          <Col md={3} xl={3}>
-            <Image
-              className="border shadow p-2 bg-white rounded"
-              src="/toddberland-500px.jpg"
-              fluid
-            />
+      <Container className="d-flex flex-column">
+        <Row className="justify-content-center pt-5 mt-5 mb-2">
+          <Col md={6} xs={11}>
+            <Row className="justify-content-center">
+              <Image
+                className="border shadow p-2 bg-white rounded"
+                src="/toddberland-500px.jpg"
+                fluid
+              />
+
+              <Button
+                href="/cv.pdf"
+                className="mt-5"
+                style={{
+                  background: '#74b4ca',
+                  color: 'white',
+                  borderColor: '#74b4ca'
+                }}
+              >
+                <Col style={{ fontSize: '18px' }}>
+                  Curriculum Vitae {<FaFilePdf className="mb-1 ml-1" />}
+                </Col>
+              </Button>
+            </Row>
           </Col>
           <Col className="mt-4 ml-1">
             <p style={{ textIndent: '40px' }} className="lead">
@@ -45,8 +64,9 @@ class Home extends Component {
             </p>
           </Col>
         </Row>
-        <Row className="mt-4 justify-content-center">
-          <Col md={6}>
+
+        <Row className="justify-content-center">
+          <Col xl="7">
             <ResponsiveEmbed
               aspect="16by9"
               style={{
@@ -55,7 +75,9 @@ class Home extends Component {
                 height: 0
               }}
             >
-              <embed
+              <video
+                controls
+                poster="/vidPoster.png"
                 type="video/mp4"
                 src="/Todd-Berland-MD.mp4"
                 style={{
@@ -65,6 +87,33 @@ class Home extends Component {
                 }}
               />
             </ResponsiveEmbed>
+          </Col>
+        </Row>
+        <Row className="justify-content-center">
+          <Col xs={12} xl={5} className="pt-4 pb-2">
+            <Card
+              className="shadow"
+              style={{
+                borderWidth: 2,
+                borderColor: '#74b4ca'
+              }}
+            >
+              <Card.Body>
+                <Card.Img variant="top" src="/show-pics/operating.jpg" />
+
+                <h4 className="mt-2"> Chance Favors the Prepared</h4>
+                <p style={{ fontSize: '14px' }}>
+                  <i>by Danielle Wong Moores</i>
+                </p>
+                <Card.Text>
+                  Surgeon, innovator, radio host — Dr. Todd Berland is always
+                  looking for the next opportunity.
+                </Card.Text>
+                <Card.Link href="http://magazines.augusta.edu/2018/12/21/chance-favors-the-prepared/">
+                  read full article
+                </Card.Link>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>
