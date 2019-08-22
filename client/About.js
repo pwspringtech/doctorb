@@ -6,7 +6,6 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
 import Image from 'react-bootstrap/Image';
-import Figure from 'react-bootstrap/Figure';
 import { FaFilePdf } from 'react-icons/fa';
 
 class About extends Component {
@@ -28,7 +27,7 @@ class About extends Component {
                 style={{
                   background: '#74b4ca',
                   color: 'white',
-                  borderColor: 'grey'
+                  borderColor: '#74b4ca'
                 }}
               >
                 <Col style={{ fontSize: '18px' }}>
@@ -101,7 +100,7 @@ class About extends Component {
           <Col xs={12} xl={5} className="pt-4 pb-2">
             <Card
               style={{
-                borderWidth: 3,
+                borderWidth: 1,
                 borderColor: '#74b4ca'
               }}
             >

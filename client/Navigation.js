@@ -16,7 +16,7 @@ class Navigation extends Component {
             collapseOnSelect
             style={{
               borderStyle: 'solid',
-              borderWidth: '3px 0px 3px 0px',
+              borderWidth: '1px 0px 1px 0px',
               borderColor: '#74b4ca',
               padding: 0,
               paddingRight: 5,
@@ -35,7 +35,7 @@ class Navigation extends Component {
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav
                   className="justify-content-center "
-                  style={{ textTransform: 'uppercase' }}
+                  // style={{ textTransform: 'uppercase' }}
                   justify
                   // fill
                 >

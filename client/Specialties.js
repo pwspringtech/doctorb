@@ -41,16 +41,29 @@ class Specialties extends Component {
           fluid
         >
           <Col className="m-2">
-            <Row className="justify-content-center mt-4 mb-3">
-              <h5> Dr. Todd Berland specializes in:</h5>
-            </Row>
-
-            <Row className="justify-content-center mb-3">
-              <i>Click Below to Learn More</i>
+            <Row
+              className="justify-content-center mt-4 mb-3"
+              style={{
+                fontSize: 18,
+                color: '#272626',
+                fontFamily: 'Tahoma, sans-serif'
+              }}
+            >
+              Dr. Berland's specializes in the following areas. Please select a
+              specialty to learn more.
             </Row>
           </Col>
           <Row className="justify-content-center mb-4">
-            <Col md="11" xl="7">
+            <Col
+              md="11"
+              xl="7"
+              style={{
+                backgroundColor: '#74b4ca',
+                padding: 2,
+                fontSize: 20,
+                color: '#272626'
+              }}
+            >
               <Accordion activeKey={this.state.activeKey}>
                 <Card className="text-center">
                   <Accordion.Toggle
@@ -59,7 +72,7 @@ class Specialties extends Component {
                     eventKey="0"
                     onClick={() => this.toggleAccordian('0')}
                   >
-                    <h5>Vascular Surgery</h5>
+                    Vascular Surgery
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="0">
                     <Card.Body>
@@ -93,7 +106,7 @@ class Specialties extends Component {
                     eventKey="1"
                     onClick={() => this.toggleAccordian('1')}
                   >
-                    <h5>Endovascular Surgery</h5>
+                    Endovascular Surgery
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="1">
                     <Card.Body>
@@ -154,7 +167,7 @@ class Specialties extends Component {
                     eventKey="2"
                     onClick={() => this.toggleAccordian('2')}
                   >
-                    <h5>Peripheral Vascular Disease</h5>
+                    Peripheral Vascular Disease
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="2">
                     <Card.Body>
@@ -213,7 +226,7 @@ class Specialties extends Component {
                     eventKey="3"
                     onClick={() => this.toggleAccordian('3')}
                   >
-                    <h5>Angioplasty / Stenting</h5>
+                    Angioplasty / Stenting
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
@@ -241,7 +254,7 @@ class Specialties extends Component {
                     eventKey="4"
                     onClick={() => this.toggleAccordian('4')}
                   >
-                    <h5>Venous Disease</h5>
+                    Venous Disease
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="4">
                     <Card.Body>
@@ -267,7 +280,7 @@ class Specialties extends Component {
                     eventKey="5"
                     onClick={() => this.toggleAccordian('5')}
                   >
-                    <h5>Deep Vein Thrombosis</h5>
+                    Deep Vein Thrombosis
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="5">
                     <Card.Body>
@@ -310,7 +323,7 @@ class Specialties extends Component {
                     eventKey="6"
                     onClick={() => this.toggleAccordian('6')}
                   >
-                    <h5>Aortic Anuerysms</h5>
+                    Aortic Anuerysms
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="6">
                     <Card.Body>
@@ -333,7 +346,7 @@ class Specialties extends Component {
                     eventKey="7"
                     onClick={() => this.toggleAccordian('7')}
                   >
-                    <h5>Cerebrovascular Disease</h5>
+                    Cerebrovascular Disease
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="7">
                     <Card.Body>
@@ -359,7 +372,7 @@ class Specialties extends Component {
                     eventKey="8"
                     onClick={() => this.toggleAccordian('8')}
                   >
-                    <h5>Lymphedema</h5>
+                    Lymphedema
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="8">
                     <Card.Body />
@@ -371,7 +384,7 @@ class Specialties extends Component {
                     eventKey="9"
                     onClick={() => this.toggleAccordian('9')}
                   >
-                    <h5>Renal and Mesenteric Arterial Disease</h5>
+                    Renal and Mesenteric Arterial Disease
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="9">
                     <Card.Body />
@@ -383,7 +396,7 @@ class Specialties extends Component {
                     eventKey="10"
                     onClick={() => this.toggleAccordian('10')}
                   >
-                    <h5>Dialysis Access</h5>
+                    Dialysis Access
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="10">
                     <Card.Body />
@@ -395,7 +408,7 @@ class Specialties extends Component {
                     eventKey="11"
                     onClick={() => this.toggleAccordian('11')}
                   >
-                    <h5>Thoracic Outlet Syndrome</h5>
+                    Thoracic Outlet Syndrome
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="11">
                     <Card.Body />
@@ -407,7 +420,7 @@ class Specialties extends Component {
                     eventKey="12"
                     onClick={() => this.toggleAccordian('12')}
                   >
-                    <h5>Pelvic Congestion Syndrome</h5>
+                    Pelvic Congestion Syndrome
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey="12">
                     <Card.Body />
