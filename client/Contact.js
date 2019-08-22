@@ -13,29 +13,26 @@ class Contact extends Component {
         <Row className="pt-5 mt-5 mb-4 ml-1 mr-1">
           <Col xs={12} md={6}>
             <Row>
-              <p>phone</p>
+              <Map />
             </Row>
-            <Row>
-              <FaPhone />
-              <a href="tel:2122635060">
-                <h6>212-263-5060</h6>
-              </a>
-            </Row>
-
-            <Row>
-              <Col xs={10} md={6}>
-                <Map />
-              </Col>
-            </Row>
-            <Row>
+            {/* <Row>
               <p>location</p>
-            </Row>
-            <Row>
+            </Row> */}
+            <Row className="mt-2">
               <h6>
                 530 1st Avenue, Suite 6F
                 <br />
                 New York, NY 10016
               </h6>
+            </Row>
+            {/* <Row>
+              <p>phone</p>
+            </Row> */}
+            <Row>
+              <FaPhone className="mr-2" />
+              <a href="tel:2122635060">
+                <h6>212-263-5060</h6>
+              </a>
             </Row>
           </Col>
           <Col xs={12} md={6}>
