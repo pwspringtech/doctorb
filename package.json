@@ -7,6 +7,7 @@
     "test": "jest --verbose",
     "test:watch": "jest --verbose --watch",
     "postinstall": "./node_modules/webpack/bin/webpack.js",
+    "start": "node index.js",
     "webpack": "webpack",
     "webpack:dev": "npm run webpack -- --mode=development --watch",
     "start:dev": "npm run webpack:dev & nodemon index.js --ignore /client --ignore /public"
@@ -28,8 +29,10 @@
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "formik": "^1.5.8",
+    "googleapis": "^42.0.0",
     "mapbox-gl": "^1.2.1",
     "node": "^11.15.0",
+    "nodemailer": "^6.3.0",
     "pg": "^7.12.0",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.10",
