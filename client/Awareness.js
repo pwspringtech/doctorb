@@ -12,13 +12,9 @@ class Awareness extends Component {
           className="d-flex align-items-start flex-column  pt-5 mt-5"
           fluid
         >
-          <Row className="justify-content-center">
+          <Row className="justify-content-center ">
             <Col md={3} className="m-1">
-              <Card
-                style={{
-                  borderWidth: '2px'
-                }}
-              >
+              <Card className="shadow">
                 <Card.Link href="brochures/PAD_Aware_Poster1_English.pdf">
                   <Card.Img
                     src="brochures/PAD-Poster1-Thumbnail.jpg"
@@ -30,11 +26,7 @@ class Awareness extends Component {
               </Card>
             </Col>
             <Col md={3} className="m-1">
-              <Card
-                style={{
-                  borderWidth: '2px'
-                }}
-              >
+              <Card className="shadow">
                 <Card.Link href="brochures/PAD_Aware_Poster2_English.pdf">
                   <Card.Img
                     style={{
@@ -46,11 +38,7 @@ class Awareness extends Component {
               </Card>
             </Col>
             <Col md={3} className="m-1">
-              <Card
-                style={{
-                  borderWidth: '2px'
-                }}
-              >
+              <Card className="shadow">
                 <Card.Link href="brochures/PAD_Aware_Poster3_English.pdf">
                   <Card.Img
                     style={{
@@ -63,11 +51,7 @@ class Awareness extends Component {
             </Col>
 
             <Col md={3} className="m-1">
-              <Card
-                style={{
-                  borderWidth: '2px'
-                }}
-              >
+              <Card className="shadow">
                 <Card.Link href="brochures/Symptoms_Checklist.pdf">
                   <Card.Img
                     style={{
@@ -79,11 +63,7 @@ class Awareness extends Component {
               </Card>
             </Col>
             <Col md={3} className="m-1">
-              <Card
-                style={{
-                  borderWidth: '2px'
-                }}
-              >
+              <Card className="shadow">
                 <Card.Link href="brochures/Artery-Anatomy-Flyer.pdf">
                   <Card.Img
                     style={{
@@ -95,11 +75,7 @@ class Awareness extends Component {
               </Card>
             </Col>
             <Col md={3} className="m-1">
-              <Card
-                style={{
-                  borderWidth: '2px'
-                }}
-              >
+              <Card className="shadow">
                 <Card.Link href="brochures/Diagnosis-and-Treatment-Flyer.pdf">
                   <Card.Img
                     style={{
@@ -111,11 +87,7 @@ class Awareness extends Component {
               </Card>
             </Col>
             <Col md={3} className="m-1">
-              <Card
-                style={{
-                  borderWidth: '2px'
-                }}
-              >
+              <Card className="shadow">
                 <Card.Link href="brochures/Fact-Sheet-thumb.pdf">
                   <Card.Img
                     style={{
@@ -128,26 +100,21 @@ class Awareness extends Component {
             </Col>
             <Col md={3} className="m-1">
               <Card
+                className="shadow"
                 style={{
-                  borderWidth: '2px'
+                  maxHeight: '580px',
+                  maxWidth: '251px',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'
                 }}
               >
                 <Card.Link href="brochures/patient_English.pdf">
-                  <Card.Img
-                    style={{
-                      maxWidth: '650px'
-                    }}
-                    src="brochures/patient_English_thumb.png"
-                  />
+                  <Card.Img src="brochures/patient_English_thumb.png" />
                 </Card.Link>
               </Card>
             </Col>
             <Col md={3} className="m-1">
-              <Card
-                style={{
-                  borderWidth: '2px'
-                }}
-              >
+              <Card className="shadow">
                 <Card.Link href="brochures/Angiosomes-Flyer.pdf">
                   <Card.Img
                     style={{

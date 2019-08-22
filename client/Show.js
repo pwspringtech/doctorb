@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import ToggleButton from 'react-bootstrap/ToggleButton';
-import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import TwitterDisplay from './TwitterDisplay';
 import ContactForm from './ContactForm';
@@ -24,26 +23,18 @@ class Show extends Component {
         <Container
           className="d-flex flex-column p-3"
           style={{ marginTop: '70px' }}
-          // fluid
         >
           <Row className="justify-content-center p-3">
-            <Col>
-              <Row xs={10} xl={12} className="mb-3">
+            <Col xs={12} xl={6} className="pl-1 pr-1 mr-2">
+              <Row className="mb-3">
                 <Image
                   src="/show-pics/VascularSurgery-DrRadio-logo.png"
                   alt="Vascular Surgery Show"
                   height="70px"
-                  // className="ml-2"
                 />
-
-                {/* <Image
-              src="/show-pics/DoctorRadio.png"
-              alt="Vascular Surgery Show"
-              height="100px"
-              className="ml-1"
-            /> */}
               </Row>
-              <Carousel className="ml-2 mb-3 mt-1">
+
+              <Carousel>
                 <Carousel.Item>
                   <Image
                     style={{ height: '350px' }}
@@ -72,12 +63,12 @@ class Show extends Component {
 
               <Row
                 style={{ height: '40px' }}
-                className="justify-content-start mt-3 mb-3 ml-4"
+                className="justify-content-start mt-3 mb-1 ml-4"
               >
                 <Image
                   src="/show-pics/SiriusXM_grey.png"
                   alt="Vascular Surgery Show"
-                  height="40px"
+                  height="32px"
                 />
                 <Image
                   src="/show-pics/Channel-110-grey.png"
@@ -87,9 +78,8 @@ class Show extends Component {
                 />
               </Row>
 
-              {/* <h5 className="mb-3 ml-5 mt-2">Vascular Disease & Treatments</h5> */}
-              <Row className="p-3">
-                <h5 className="mt-2 pt-3">
+              <Row className="justify-content-center p-3">
+                <h5>
                   Dr. Todd Berland{' '}
                   <small>
                     discusses vascular health as well as diseases of the
@@ -112,15 +102,23 @@ class Show extends Component {
                     this.setState({ formVisible: !this.state.formVisible })
                   }
                 >
-                  <ToggleButton>message Dr. Todd Berland</ToggleButton>
+                  <ToggleButton
+                    style={{
+                      background: '#74b4ca',
+                      color: 'white',
+                      borderColor: '#74b4ca'
+                    }}
+                  >
+                    send Dr. Todd Berland a message
+                  </ToggleButton>
                 </ToggleButtonGroup>
               </Row>
-              <Row className="mt-2 p-1">
+              <Row className="mt-3 justify-content-center">
                 {this.state.formVisible ? <ContactForm /> : null}
               </Row>
             </Col>
-            <Row xs xl="auto" className="m-2">
-              <Col className="border shadow p-1 bg-white rounded">
+            <Row className="m-2">
+              <Col xs={12} xl={12} className="border shadow bg-white rounded">
                 <TwitterDisplay twitterLoaded={false} />
               </Col>
             </Row>

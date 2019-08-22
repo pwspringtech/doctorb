@@ -12,13 +12,29 @@ class About extends Component {
   render() {
     return (
       <Container className="d-flex flex-column">
-        <Row className="pt-5 mt-5 mb-2">
-          <Col md={3} xl={4}>
-            <Image
-              className="border shadow p-2 bg-white rounded"
-              src="/toddberland-500px.jpg"
-              fluid
-            />
+        <Row className="justify-content-center pt-5 mt-5 mb-2">
+          <Col md={6} xs={11}>
+            <Row className="justify-content-center">
+              <Image
+                className="border shadow p-2 bg-white rounded"
+                src="/toddberland-500px.jpg"
+                fluid
+              />
+
+              <Button
+                href="/cv.pdf"
+                className="mt-5"
+                style={{
+                  background: '#74b4ca',
+                  color: 'white',
+                  borderColor: '#74b4ca'
+                }}
+              >
+                <Col style={{ fontSize: '18px' }}>
+                  Curriculum Vitae {<FaFilePdf className="mb-1 ml-1" />}
+                </Col>
+              </Button>
+            </Row>
           </Col>
           <Col className="mt-4 ml-1">
             <p style={{ textIndent: '40px' }} className="lead">
@@ -48,17 +64,9 @@ class About extends Component {
             </p>
           </Col>
         </Row>
-        <Row className="mt-4 mb-4 justify-content-center">
-          <Button href="/cv.pdf">
-            <Row className="justify-content-center">
-              <Col style={{ fontSize: '18px' }}>
-                Curriculum Vitae {<FaFilePdf className="mb-1 ml-1" />}
-              </Col>
-            </Row>
-          </Button>
-        </Row>
-        <Row>
-          <Col xl="8">
+
+        <Row className="justify-content-center">
+          <Col xl="7">
             <ResponsiveEmbed
               aspect="16by9"
               style={{
@@ -67,7 +75,9 @@ class About extends Component {
                 height: 0
               }}
             >
-              <embed
+              <video
+                controls
+                poster="/vidPoster.png"
                 type="video/mp4"
                 src="/Todd-Berland-MD.mp4"
                 style={{
@@ -78,13 +88,19 @@ class About extends Component {
               />
             </ResponsiveEmbed>
           </Col>
-          <Col xs={12} xl={4}>
-            <Card>
+        </Row>
+        <Row className="justify-content-center">
+          <Col xs={12} xl={5} className="pt-4 pb-2">
+            <Card
+              className="shadow"
+              style={{
+                borderWidth: 2,
+                borderColor: '#74b4ca'
+              }}
+            >
               <Card.Body>
                 <Card.Img variant="top" src="/show-pics/operating.jpg" />
-                {/* <Card.Title className="mt-2">
-                  Chance Favors the Prepared
-                </Card.Title> */}
+
                 <h4 className="mt-2"> Chance Favors the Prepared</h4>
                 <p style={{ fontSize: '14px' }}>
                   <i>by Danielle Wong Moores</i>
