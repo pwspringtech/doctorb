@@ -28,7 +28,7 @@ class Navigation extends Component {
             }}
           >
             <Container>
-              <Navbar.Brand href="#">
+              <Navbar.Brand href="#about">
                 <img
                   src="/ToddBerlandMD_logo.png"
                   height="70px"

@@ -22,18 +22,21 @@ class Footer extends Component {
           <Container>
             <Row className="mb-5">
               <Col sm className="mt-5">
-                <Link to="/" className="text-dark">
+                {/* <Link to="/" className="text-dark">
                   <h6>Home</h6>
-                </Link>
+                </Link> */}
                 <Link to="/about" className="text-dark">
                   <h6>About</h6>
                 </Link>
                 <Link to="/publications" className="text-dark">
                   <h6>Publications</h6>
                 </Link>
+                <Link to="/awareness" className="text-dark">
+                  <h6>Patient Awareness</h6>
+                </Link>
                 <Link to="/show" className="text-dark">
                   <h6>
-                    <i>Vascular Surgery Show</i> SiriusXM
+                    <i>Vascular Surgery Show</i> on SiriusXM
                   </h6>
                 </Link>
                 <Link to="/contact" className="text-dark">
