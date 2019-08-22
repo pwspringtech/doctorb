@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import ToggleButton from 'react-bootstrap/ToggleButton';
-import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import TwitterDisplay from './TwitterDisplay';
 import ContactForm from './ContactForm';
@@ -25,16 +24,16 @@ class Show extends Component {
           className="d-flex flex-column p-3"
           style={{ marginTop: '70px' }}
         >
-          <Row className="justify-content-between p-3">
-            <Col className="pl-5 pr-5">
-              <Row xs={10} xl={10} className="mb-3">
+          <Row className="justify-content-center p-3">
+            <Col xs={12} xl={6} className="pl-1 pr-1 mr-2">
+              <Row className="mb-3">
                 <Image
                   src="/show-pics/VascularSurgery-DrRadio-logo.png"
                   alt="Vascular Surgery Show"
                   height="70px"
-                  // className="ml-2"
                 />
               </Row>
+
               <Carousel>
                 <Carousel.Item>
                   <Image
@@ -79,7 +78,7 @@ class Show extends Component {
                 />
               </Row>
 
-              <Row className="justify-content-center">
+              <Row className="justify-content-center p-3">
                 <h5>
                   Dr. Todd Berland{' '}
                   <small>
@@ -103,15 +102,23 @@ class Show extends Component {
                     this.setState({ formVisible: !this.state.formVisible })
                   }
                 >
-                  <ToggleButton>message Dr. Todd Berland</ToggleButton>
+                  <ToggleButton
+                    style={{
+                      background: '#74b4ca',
+                      color: 'white',
+                      borderColor: '#74b4ca'
+                    }}
+                  >
+                    send Dr. Todd Berland a message
+                  </ToggleButton>
                 </ToggleButtonGroup>
               </Row>
-              <Row className="mt-2 p-1">
+              <Row className="mt-3 justify-content-center">
                 {this.state.formVisible ? <ContactForm /> : null}
               </Row>
             </Col>
-            <Row xs xl="auto" className="m-2">
-              <Col className="border shadow p-1 bg-white rounded">
+            <Row className="m-2">
+              <Col xs={12} xl={12} className="border shadow bg-white rounded">
                 <TwitterDisplay twitterLoaded={false} />
               </Col>
             </Row>

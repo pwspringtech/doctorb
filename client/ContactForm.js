@@ -36,7 +36,13 @@ export default function ContactForm() {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <Card>
+    <Card
+      className="shadow"
+      style={{
+        borderWidth: 2,
+        borderColor: "#74b4ca"
+      }}
+    >
       <ContactFormSendPopup
         show={modalShow}
         onHide={() => setModalShow(false)}

@@ -21,16 +21,14 @@ class Publications extends Component {
     return (
       <Fragment>
         <Container className="d-flex flex-column  pt-5 mt-5" fluid>
-          <Row className="justify-content-start pb-1">
-            {/* card */}
+          <Row className="justify-content-center m-1 pb-1">
             <Col xs={12} md={3}>
               <Card
                 style={{
-                  borderWidth: 1,
-                  borderColor: '#74b4ca',
                   padding: 2,
                   marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
                   <Card.Link
@@ -47,14 +45,12 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-
               <Card
                 style={{
-                  borderWidth: 1,
-                  borderColor: '#74b4ca',
                   padding: 2,
                   marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
                   <Card.Link
@@ -76,11 +72,10 @@ class Publications extends Component {
             <Col xs={12} md={3}>
               <Card
                 style={{
-                  borderWidth: 1,
-                  borderColor: '#74b4ca',
                   padding: 2,
                   marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
                   <Card.Link className="text-dark" href="#arteryimbrication">
@@ -94,14 +89,12 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-
               <Card
                 style={{
-                  borderWidth: 1,
-                  borderColor: '#74b4ca',
                   padding: 2,
                   marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
                   <Card.Link className="text-dark" href="#mesentericischemia">
@@ -118,11 +111,10 @@ class Publications extends Component {
             <Col xs={12} md={3}>
               <Card
                 style={{
-                  borderWidth: 1,
-                  borderColor: '#74b4ca',
                   padding: 2,
                   marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
                   <Card.Link
@@ -139,14 +131,12 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-
               <Card
                 style={{
-                  borderWidth: 1,
-                  borderColor: '#74b4ca',
                   padding: 2,
                   marginTop: 8
                 }}
+                className="shadow"
               >
                 <Card.Body>
                   <Card.Link
@@ -167,11 +157,10 @@ class Publications extends Component {
             <Col xs={12} md={3}>
               <Card
                 style={{
-                  borderWidth: 1,
-                  borderColor: '#74b4ca',
                   padding: 2,
                   marginTop: 5
                 }}
+                className="shadow"
               >
                 <Card.Body>
                   <Card.Link className="text-dark" href="#UpdateEVLA">
@@ -184,18 +173,14 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
-              <Row style={{ offset: 8, padding: 10 }}>
+              <Row style={{ offset: 8 }} className="justify-content-center">
                 <div
-                  style={{
-                    borderWidth: 3,
-                    borderColor: '#74b4ca'
-                  }}
-                  className="rg-plugin"
+                  className="shadow mt-3 mb-3 rg-plugin"
                   data-stats="true"
                   data-faces="true"
                   data-publications="true"
                   data-height="600"
-                  data-width="400"
+                  data-width="350"
                   data-theme="light"
                   data-type="department"
                   data-installationId="5d5df620f8ea5243076660f2"

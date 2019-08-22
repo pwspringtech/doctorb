@@ -18,7 +18,6 @@ class Specialties extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    // Typical usage (don't forget to compare props):
     if (this.props !== prevProps) {
       this.setState({ activeKey: this.props.match.params.dak });
     }

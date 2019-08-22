@@ -14,7 +14,7 @@ class Footer extends Component {
         className="bg-light"
         style={{
           borderStyle: 'solid',
-          borderWidth: '1px 0px 1px 0px',
+          borderWidth: '2px 0px 2px 0px',
           borderColor: '#74b4ca'
         }}
       >

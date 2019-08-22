@@ -66,14 +66,7 @@ class About extends Component {
         </Row>
 
         <Row className="justify-content-center">
-          <Col
-            xl="7"
-            // style={{
-            //   backgroundColor: '#74b4ca',
-            //   paddingTop: 8,
-            //   paddingBottom: 8
-            // }}
-          >
+          <Col xl="7">
             <ResponsiveEmbed
               aspect="16by9"
               style={{
@@ -99,8 +92,9 @@ class About extends Component {
         <Row className="justify-content-center">
           <Col xs={12} xl={5} className="pt-4 pb-2">
             <Card
+              className="shadow"
               style={{
-                borderWidth: 1,
+                borderWidth: 2,
                 borderColor: '#74b4ca'
               }}
             >
