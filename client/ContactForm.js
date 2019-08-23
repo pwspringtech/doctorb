@@ -10,6 +10,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import { Link } from "react-router-dom"
 import axios from "axios";
 import ContactFormSendPopup from "./ContactFormSendPopup";
 
@@ -221,7 +222,7 @@ export default function ContactForm() {
                   <Form.Group>
                     <Form.Check
                       name="terms"
-                      label="Agree to terms and conditions"
+                      label={<div>Please agree to our <Link to ="/termsandconditions">terms and conditions</Link></div>}
                       feedback={errors.terms}
                       onChange={handleChange}
                       isInvalid={touched.terms && !!errors.terms}
