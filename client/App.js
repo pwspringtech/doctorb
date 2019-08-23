@@ -15,6 +15,8 @@ import Contact from './Contact';
 import About from './About';
 import Show from './Show';
 import ScrollToTop from './ScrollToTop';
+import Terms from './Terms';
+import PrivacyPolicy from './PrivacyPolicy';
 
 class App extends Component {
   render() {
@@ -52,6 +54,8 @@ class App extends Component {
               <Route exact path="/updateevla" component={UpdateEVLA} />
               <Route exact path="/show" component={Show} />
               <Route exact path="/specialties/:dak?" component={Specialties} />
+              <Route exact path="/termsandconditions" component={Terms} />
+              <Route exact path="/privacypolicy" component={PrivacyPolicy} />
             </Switch>
             <Footer />
           </ScrollToTop>
