@@ -20,7 +20,7 @@ class Footer extends Component {
       >
         <Row>
           <Container>
-            <Row className="mb-5">
+            <Row className="mb-3">
               <Col sm className="mt-5">
                 {/* <Link to="/" className="text-dark">
                   <h6>Home</h6>
@@ -108,6 +108,14 @@ class Footer extends Component {
               </Col>
               <Col sm className="mt-4">
                 <Map />
+              </Col>
+            </Row>
+            <Row className="mb-3 justify-content-center">
+              <Col lg={2}>
+                  <Link to="/termsandconditions" className="text-muted text-center">Terms and Conditions</Link>
+              </Col>
+              <Col lg={2}>
+                  <Link to="/privacypolicy" className="text-muted text-center">Privacy Policy</Link>
               </Col>
             </Row>
           </Container>
