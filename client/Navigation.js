@@ -11,8 +11,6 @@ class Navigation extends Component {
         <Row style={{ marginBottom: '20px' }}>
           <Navbar
             fixed="top"
-            // bg="dark"
-            // variant="light"
             expand="md"
             collapseOnSelect
             style={{
@@ -24,7 +22,6 @@ class Navigation extends Component {
               paddingLeft: 5,
               backgroundColor: '#f5f5f5',
               fontSize: 18
-              // fontFamily: 'Tahoma '
             }}
           >
             <Container>
@@ -37,11 +34,7 @@ class Navigation extends Component {
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav
-                  className="justify-content-center"
-                  // style={{ textTransform: 'uppercase' }}
-                  justify
-                >
+                <Nav className="justify-content-center" justify>
                   <Nav.Item>
                     <Nav.Link href="#about">About</Nav.Link>
                   </Nav.Item>
