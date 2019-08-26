@@ -22,9 +22,6 @@ class Footer extends Component {
           <Container>
             <Row className="mb-3">
               <Col sm className="mt-5">
-                {/* <Link to="/" className="text-dark">
-                  <h6>Home</h6>
-                </Link> */}
                 <Link to="/about" className="text-dark">
                   <h6>About</h6>
                 </Link>
@@ -35,16 +32,21 @@ class Footer extends Component {
                   <h6>Patient Awareness</h6>
                 </Link>
                 <Link to="/show" className="text-dark">
-                  <h6>
-                    <i>Vascular Surgery Show</i> on SiriusXM
-                  </h6>
+                  <h6>Vascular Surgery Show on SiriusXM</h6>
                 </Link>
                 <Link to="/contact" className="text-dark">
                   <h6>Contact</h6>
                 </Link>
-                <p>
+
+                <Link to="/termsandconditions" className="text-dark">
+                  <h6>Terms and Conditions</h6>
+                </Link>
+                <Link to="/privacypolicy" className="text-dark">
+                  <h6>Privacy Policy</h6>
+                </Link>
+                <h6 className="mb-3">
                   Tel: <a href="tel:2122635060">212-263-5060</a>
-                </p>
+                </h6>
                 <SocialIcon
                   url="https://www.linkedin.com/in/todd-berland-5228ab19/"
                   style={{ height: 40, width: 40 }}
@@ -108,14 +110,6 @@ class Footer extends Component {
               </Col>
               <Col sm className="mt-4">
                 <Map />
-              </Col>
-            </Row>
-            <Row className="mb-3 justify-content-center">
-              <Col lg={2}>
-                  <Link to="/termsandconditions" className="text-muted text-center">Terms and Conditions</Link>
-              </Col>
-              <Col lg={2}>
-                  <Link to="/privacypolicy" className="text-muted text-center">Privacy Policy</Link>
               </Col>
             </Row>
           </Container>
