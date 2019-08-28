@@ -34,7 +34,15 @@ class Navigation extends Component {
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="justify-content-center" justify>
+                <Nav
+                  className="justify-content-center"
+                  justify
+                  style={{
+                    fontFamily: 'serenity, sans-serif',
+                    fontWeight: 500,
+                    fontStyle: 'normal'
+                  }}
+                >
                   <Nav.Item>
                     <Nav.Link href="#about">About</Nav.Link>
                   </Nav.Item>
@@ -44,7 +52,9 @@ class Navigation extends Component {
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="#publications">Publications</Nav.Link>
+                    <Nav.Link href="#publications">
+                      Research & Publications
+                    </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
