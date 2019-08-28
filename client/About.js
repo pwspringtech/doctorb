@@ -13,7 +13,7 @@ class About extends Component {
     return (
       <Container className="d-flex flex-column">
         <Row className="justify-content-center pt-5 mt-5 mb-2">
-          <Col md={6} xs={11}>
+          <Col md={4} xs={11}>
             <Row className="justify-content-center">
               <Image
                 className="border shadow p-2 bg-white rounded"
@@ -23,7 +23,7 @@ class About extends Component {
 
               <Button
                 href="/cv.pdf"
-                className="mt-5"
+                className="mt-4"
                 style={{
                   background: '#74b4ca',
                   color: 'white',
@@ -36,7 +36,7 @@ class About extends Component {
               </Button>
             </Row>
           </Col>
-          <Col className="mt-4 ml-1">
+          <Col className="mt-2 p-4">
             <p style={{ textIndent: '40px' }} className="lead">
               Dr. Berland is a world renowned vascular surgeon based in New York
               City. He is listed in Castle Connolly “America’s Top Doctors” for
@@ -65,8 +65,8 @@ class About extends Component {
           </Col>
         </Row>
 
-        <Row className="justify-content-center">
-          <Col xl="7">
+        <Row className="justify-content-center mt-3">
+          <Col xl="10">
             <ResponsiveEmbed
               aspect="16by9"
               style={{
@@ -88,9 +88,8 @@ class About extends Component {
               />
             </ResponsiveEmbed>
           </Col>
-        </Row>
-        <Row className="justify-content-center">
-          <Col xs={12} xl={5} className="pt-4 pb-2">
+
+          <Col xs={12} xl={4} className="pt-4 pb-2">
             <Card
               className="shadow"
               style={{
@@ -112,6 +111,64 @@ class About extends Component {
                 <Card.Link href="http://magazines.augusta.edu/2018/12/21/chance-favors-the-prepared/">
                   read full article
                 </Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} xl={4} className="pt-4 pb-2 mb-3">
+            <Card
+              className="shadow"
+              style={{
+                borderWidth: 2,
+                borderColor: '#74b4ca'
+              }}
+            >
+              <Card.Body>
+                <Row className="justify-content-center mb-3">
+                  <h4 className="mt-2"> Available for Expert Work</h4>
+                </Row>
+                <Card.Text style={{ textIndent: '20px' }}>
+                  Dr. Berland's expertise in vascular disease and treatments has
+                  lead to being sought out to provide expert opinion in legal
+                  cases. He is available for both plaintiff and defense side
+                  work. Dr. Berland’s specialist knowledge supports considered
+                  opinions which may be placed before a court (or other judicial
+                  or quasi-judicial body – for example, a tribunal or
+                  arbitration). His opinion may assist the court or parties in
+                  reaching its decision.
+                  <br />
+                </Card.Text>
+                <Card.Link href="#contact">contact Dr. Berland</Card.Link>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} xl={4} className="pt-4 pb-2 mb-3">
+            <Card
+              className="shadow"
+              style={{
+                borderWidth: 2,
+                borderColor: '#74b4ca'
+              }}
+            >
+              <Card.Body>
+                <Row className="justify-content-center mb-3">
+                  <h4 className="mt-2"> Available, Affable & Able</h4>
+                </Row>
+                <Card.Text style={{ textIndent: '20px' }}>
+                  "In addition to diagnosing and treating people with venous
+                  disease, aortic disease, thoracic disease, and other
+                  conditions, I connect with my patients and try to relate to
+                  them on a personal level, so I know what they’re going
+                  through. My patients can contact me anytime, day or night, and
+                  I work hard to be “available, affable, and able”—the three
+                  “A’s” of surgery."
+                  <br />
+                  <br />
+                  <small>
+                    <i>- Todd Berland, M.D.</i>
+                  </small>
+                  <br />
+                </Card.Text>
+                <Card.Link href="#contact">contact Dr. Berland</Card.Link>
               </Card.Body>
             </Card>
           </Col>

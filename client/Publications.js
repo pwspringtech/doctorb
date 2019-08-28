@@ -1,18 +1,18 @@
-import React, { Component, Fragment } from 'react';
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import React, { Component, Fragment } from "react";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 class Publications extends Component {
   componentDidMount() {
     (() => {
-      var st = document.createElement('script');
-      st.type = 'text/javascript';
+      var st = document.createElement("script");
+      st.type = "text/javascript";
       st.async = true;
       st.src =
-        'https://www.researchgate.net/javascript/plugin/plugin-api-min.js';
-      var s = document.getElementsByTagName('script')[0];
+        "https://www.researchgate.net/javascript/plugin/plugin-api-min.js";
+      var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(st, s);
     })();
   }
@@ -20,13 +20,89 @@ class Publications extends Component {
   render() {
     return (
       <Fragment>
-        <Container className="d-flex flex-column  pt-5 mt-5" fluid>
-          <Row className="justify-content-center m-1 pb-1">
-            <Col xs={12} md={3}>
+        <Container className="d-flex flex-column pt-5 mt-5" fluid>
+          <Row className="justify-content-center">
+            <Col xs={12} md={5}>
               <Card
                 style={{
                   padding: 2,
-                  marginTop: 8
+                  marginTop: 5,
+                  borderWidth: 2,
+                  borderColor: "#74b4ca"
+                }}
+                className="shadow"
+              >
+                <Card.Header>Dr. Berland's current Clinical Trials</Card.Header>
+                <Card.Body>
+                  <Card.Text>
+                    <Row className="justify-content-between">
+                      <Col xs={8} style={{ fontWeight: "bold" }}>
+                        Medtronic Abre Stent Trial
+                      </Col>
+                      <Col xs={4}>
+                        <small>
+                          <i>2016-Present</i>
+                        </small>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col className="ml-1 mb-2">
+                        Evaluating the Medtronic Abre venous stent <br />
+                        Sponsor: Medtronic <br /> Principal Investigator: Todd
+                        Berland, M.D.
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col xs={8} style={{ fontWeight: "bold" }}>
+                        Cook VIVO Trial
+                      </Col>
+                      <Col xs={4}>
+                        <small>
+                          <i>2016 - Present</i>
+                        </small>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col className="ml-1 mb-2">
+                        Evaluating the Cook Zilver Vena Stent – Active Follow Up
+                        <br />
+                        Sponsor: Cook
+                        <br />
+                        Principal Investigator: Todd Berland, M.D.
+                      </Col>
+                    </Row>
+
+                    <Row className="justify-content-between">
+                      <Col xs={8} style={{ fontWeight: "bold" }}>
+                        EndoAVF Trial
+                      </Col>
+                      <Col xs={4}>
+                        <small>
+                          <i>2016-Present</i>
+                        </small>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col className="ml-1 mb-2">
+                        Evaluating efficacy of percutaneous fistula creation
+                        Enrollment to Summer 2019
+                      </Col>
+                    </Row>
+                  </Card.Text>
+                  {/*
+                <Card.Link className="text-dark" href="/cv.pdf">
+                  Dr. Berland's CV
+                </Card.Link> */}
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col xs={12} md={5}>
+              <Card
+                style={{
+                  padding: 2,
+                  marginTop: 8,
+                  borderWidth: 2,
+                  borderColor: "#74b4ca"
                 }}
                 className="shadow"
               >
@@ -45,10 +121,14 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
+            </Col>
+            <Col xs={12} md={5}>
               <Card
                 style={{
                   padding: 2,
-                  marginTop: 8
+                  marginTop: 8,
+                  borderWidth: 2,
+                  borderColor: "#74b4ca"
                 }}
                 className="shadow"
               >
@@ -69,11 +149,13 @@ class Publications extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={12} md={3}>
+            <Col xs={12} md={5}>
               <Card
                 style={{
                   padding: 2,
-                  marginTop: 8
+                  marginTop: 8,
+                  borderWidth: 2,
+                  borderColor: "#74b4ca"
                 }}
                 className="shadow"
               >
@@ -89,10 +171,14 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
+            </Col>
+            <Col xs={12} md={5}>
               <Card
                 style={{
                   padding: 2,
-                  marginTop: 8
+                  marginTop: 8,
+                  borderWidth: 2,
+                  borderColor: "#74b4ca"
                 }}
                 className="shadow"
               >
@@ -108,11 +194,13 @@ class Publications extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={12} md={3}>
+            <Col xs={12} md={5}>
               <Card
                 style={{
                   padding: 2,
-                  marginTop: 8
+                  marginTop: 8,
+                  borderWidth: 2,
+                  borderColor: "#74b4ca"
                 }}
                 className="shadow"
               >
@@ -131,10 +219,14 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
+            </Col>
+            <Col xs={12} md={5}>
               <Card
                 style={{
                   padding: 2,
-                  marginTop: 8
+                  marginTop: 8,
+                  borderWidth: 2,
+                  borderColor: "#74b4ca"
                 }}
                 className="shadow"
               >
@@ -154,11 +246,13 @@ class Publications extends Component {
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={12} md={3}>
+            <Col xs={12} md={5}>
               <Card
                 style={{
                   padding: 2,
-                  marginTop: 5
+                  marginTop: 5,
+                  borderWidth: 2,
+                  borderColor: "#74b4ca"
                 }}
                 className="shadow"
               >
@@ -173,6 +267,8 @@ class Publications extends Component {
                   </Card.Link>
                 </Card.Body>
               </Card>
+            </Col>
+            <Col xs={12} md={5}>
               <Row style={{ offset: 8 }} className="justify-content-center">
                 <div
                   className="shadow mt-3 mb-3 rg-plugin"

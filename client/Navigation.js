@@ -44,7 +44,9 @@ class Navigation extends Component {
                   </Nav.Item>
 
                   <Nav.Item>
-                    <Nav.Link href="#publications">Publications</Nav.Link>
+                    <Nav.Link href="#publications">
+                      Research & Publications
+                    </Nav.Link>
                   </Nav.Item>
 
                   <Nav.Item>
