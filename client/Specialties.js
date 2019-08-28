@@ -52,7 +52,7 @@ class Specialties extends Component {
               specialty to learn more.
             </Row>
           </Col>
-          <Row className="justify-content-center mb-4">
+          <Row className="justify-content-center mb-4 p-3">
             <Col
               md="11"
               xl="7"
@@ -64,7 +64,10 @@ class Specialties extends Component {
               }}
             >
               <Accordion activeKey={this.state.activeKey}>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#8acab3', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     variant="link"
@@ -99,7 +102,10 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
 
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#74b4ca', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="1"
@@ -160,7 +166,10 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#8acab3', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="2"
@@ -219,7 +228,10 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#74b4ca', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="3"
@@ -247,7 +259,10 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#8acab3', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="4"
@@ -273,7 +288,10 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
 
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#74b4ca', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="5"
@@ -316,7 +334,10 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#8acab3', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="6"
@@ -339,7 +360,10 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#74b4ca', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="7"
@@ -365,7 +389,10 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#8acab3', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="8"
@@ -377,7 +404,10 @@ class Specialties extends Component {
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#74b4ca', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="9"
@@ -389,7 +419,10 @@ class Specialties extends Component {
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#8acab3', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="10"
@@ -401,7 +434,10 @@ class Specialties extends Component {
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#74b4ca', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="11"
@@ -413,7 +449,10 @@ class Specialties extends Component {
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center">
+                <Card
+                  className="text-center"
+                  style={{ background: '#8acab3', color: 'white' }}
+                >
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="12"

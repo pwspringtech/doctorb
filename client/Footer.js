@@ -41,7 +41,7 @@ class Footer extends Component {
                 <Link to="/termsandconditions" className="text-dark">
                   <h6>Terms and Conditions</h6>
                 </Link>
-                <Link to="/privacypolicy" className="text-dark">
+                <Link to="/privacypolicy" className="text-dark mb-s">
                   <h6>Privacy Policy</h6>
                 </Link>
                 <h6 className="mb-3">
