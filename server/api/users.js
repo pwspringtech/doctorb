@@ -25,7 +25,6 @@ router.post('/messages', (req, res, next) => {
     const { email, firstName, lastName, phone, message } = req.body;
     User.findOrCreate({where: {email: req.body.email}, defaults: {email, firstName, lastName, phone}})
         .then(([user, created]) => {
-            console.log(user.id)
             ContactMessage.create({userId: user.id, message})
                 .then(finalMessage => {
                     emailContactMessage(formatUserMessageForEmail(req.body))
