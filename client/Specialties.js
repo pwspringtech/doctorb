@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Accordion from 'react-bootstrap/Accordion';
+import React, { Component, Fragment } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Accordion from "react-bootstrap/Accordion";
 
 class Specialties extends Component {
   constructor(props) {
@@ -35,7 +35,7 @@ class Specialties extends Component {
     return (
       <Fragment>
         <Container
-          style={{ marginTop: '80px' }}
+          style={{ marginTop: "80px" }}
           className="d-flex flex-column"
           fluid
         >
@@ -44,8 +44,8 @@ class Specialties extends Component {
               className="justify-content-center mt-4 mb-3"
               style={{
                 fontSize: 18,
-                color: '#272626',
-                fontFamily: 'Tahoma, sans-serif'
+                color: "#272626",
+                fontFamily: "Tahoma, sans-serif"
               }}
             >
               Dr. Berland's specializes in the following areas. Please select a
@@ -57,19 +57,20 @@ class Specialties extends Component {
               md="11"
               xl="7"
               style={{
-                backgroundColor: '#74b4ca',
+                backgroundColor: "#74b4ca",
                 padding: 2,
                 fontSize: 20,
-                color: '#272626'
+                color: "#272626"
               }}
             >
               <Accordion activeKey={this.state.activeKey}>
-                <Card className="text-center" style={{ background: '#8acab3' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     variant="link"
                     eventKey="0"
-                    onClick={() => this.toggleAccordian('0')}
+                    onClick={() => this.toggleAccordian("0")}
+                    style={{ background: "#f5fcfd" }}
                   >
                     Vascular Surgery
                   </Accordion.Toggle>
@@ -77,7 +78,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -99,11 +100,12 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
 
-                <Card className="text-center" style={{ background: '#74b4ca' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="1"
-                    onClick={() => this.toggleAccordian('1')}
+                    onClick={() => this.toggleAccordian("1")}
+                    style={{ background: "#fafffd" }}
                   >
                     Endovascular Surgery
                   </Accordion.Toggle>
@@ -111,7 +113,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -131,7 +133,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -144,7 +146,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -160,11 +162,12 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#8acab3' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="2"
-                    onClick={() => this.toggleAccordian('2')}
+                    onClick={() => this.toggleAccordian("2")}
+                    style={{ background: "#fafffd" }}
                   >
                     Peripheral Vascular Disease
                   </Accordion.Toggle>
@@ -172,7 +175,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -185,7 +188,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -203,7 +206,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -219,11 +222,12 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#74b4ca' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="3"
-                    onClick={() => this.toggleAccordian('3')}
+                    onClick={() => this.toggleAccordian("3")}
+                    style={{ background: "#f7fffd" }}
                   >
                     Angioplasty / Stenting
                   </Accordion.Toggle>
@@ -231,7 +235,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -247,11 +251,12 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#8acab3' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="4"
-                    onClick={() => this.toggleAccordian('4')}
+                    onClick={() => this.toggleAccordian("4")}
+                    style={{ background: "#f5fcfd" }}
                   >
                     Venous Disease
                   </Accordion.Toggle>
@@ -259,7 +264,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -273,11 +278,12 @@ class Specialties extends Component {
                   </Accordion.Collapse>
                 </Card>
 
-                <Card className="text-center" style={{ background: '#74b4ca' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="5"
-                    onClick={() => this.toggleAccordian('5')}
+                    onClick={() => this.toggleAccordian("5")}
+                    style={{ background: "#f7fffd" }}
                   >
                     Deep Vein Thrombosis
                   </Accordion.Toggle>
@@ -285,7 +291,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -299,7 +305,7 @@ class Specialties extends Component {
                       </p>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -316,11 +322,12 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#8acab3' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="6"
-                    onClick={() => this.toggleAccordian('6')}
+                    onClick={() => this.toggleAccordian("6")}
+                    style={{ background: "#f5fcfd" }}
                   >
                     Aortic Anuerysms
                   </Accordion.Toggle>
@@ -328,7 +335,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -339,11 +346,12 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#74b4ca' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="7"
-                    onClick={() => this.toggleAccordian('7')}
+                    onClick={() => this.toggleAccordian("7")}
+                    style={{ background: "#f7fffd" }}
                   >
                     Cerebrovascular Disease
                   </Accordion.Toggle>
@@ -351,7 +359,7 @@ class Specialties extends Component {
                     <Card.Body>
                       <p
                         style={{
-                          textIndent: '40px'
+                          textIndent: "40px"
                         }}
                         className="lead"
                       >
@@ -365,11 +373,12 @@ class Specialties extends Component {
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#8acab3' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="8"
-                    onClick={() => this.toggleAccordian('8')}
+                    onClick={() => this.toggleAccordian("8")}
+                    style={{ background: "#f5fcfd" }}
                   >
                     Lymphedema
                   </Accordion.Toggle>
@@ -377,11 +386,12 @@ class Specialties extends Component {
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#74b4ca' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="9"
-                    onClick={() => this.toggleAccordian('9')}
+                    onClick={() => this.toggleAccordian("9")}
+                    style={{ background: "#f7fffd" }}
                   >
                     Renal and Mesenteric Arterial Disease
                   </Accordion.Toggle>
@@ -389,11 +399,12 @@ class Specialties extends Component {
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#8acab3' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="10"
-                    onClick={() => this.toggleAccordian('10')}
+                    onClick={() => this.toggleAccordian("10")}
+                    style={{ background: "#f5fcfd" }}
                   >
                     Dialysis Access
                   </Accordion.Toggle>
@@ -401,11 +412,12 @@ class Specialties extends Component {
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#74b4ca' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="11"
-                    onClick={() => this.toggleAccordian('11')}
+                    onClick={() => this.toggleAccordian("11")}
+                    style={{ background: "#f7fffd" }}
                   >
                     Thoracic Outlet Syndrome
                   </Accordion.Toggle>
@@ -413,11 +425,12 @@ class Specialties extends Component {
                     <Card.Body />
                   </Accordion.Collapse>
                 </Card>
-                <Card className="text-center" style={{ background: '#8acab3' }}>
+                <Card className="text-center">
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="12"
-                    onClick={() => this.toggleAccordian('12')}
+                    onClick={() => this.toggleAccordian("12")}
+                    style={{ background: "#f5fcfd" }}
                   >
                     Pelvic Congestion Syndrome
                   </Accordion.Toggle>
