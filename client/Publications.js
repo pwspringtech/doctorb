@@ -25,7 +25,7 @@ class Publications extends Component {
             <Col xs={12} md={5}>
               <Card
                 style={{
-                  padding: 2,
+                  padding: 1,
                   marginTop: 5,
                   borderWidth: 2,
                   borderColor: "#74b4ca"
@@ -36,34 +36,34 @@ class Publications extends Component {
                 <Card.Body>
                   <Card.Text>
                     <Row className="justify-content-between">
-                      <Col xs={8} style={{ fontWeight: "bold" }}>
+                      <Col xs={9} style={{ fontWeight: "bold" }}>
                         Medtronic Abre Stent Trial
                       </Col>
-                      <Col xs={4}>
+                      <Col xs={3}>
                         <small>
                           <i>2016-Present</i>
                         </small>
                       </Col>
                     </Row>
                     <Row>
-                      <Col className="ml-1 mb-2">
+                      <Col className="ml-1 mb-3">
                         Evaluating the Medtronic Abre venous stent <br />
                         Sponsor: Medtronic <br /> Principal Investigator: Todd
                         Berland, M.D.
                       </Col>
                     </Row>
                     <Row>
-                      <Col xs={8} style={{ fontWeight: "bold" }}>
+                      <Col xs={9} style={{ fontWeight: "bold" }}>
                         Cook VIVO Trial
                       </Col>
-                      <Col xs={4}>
+                      <Col xs={3}>
                         <small>
-                          <i>2016 - Present</i>
+                          <i>2016-Present</i>
                         </small>
                       </Col>
                     </Row>
                     <Row>
-                      <Col className="ml-1 mb-2">
+                      <Col className="ml-1 mb-3">
                         Evaluating the Cook Zilver Vena Stent – Active Follow Up
                         <br />
                         Sponsor: Cook
@@ -73,26 +73,22 @@ class Publications extends Component {
                     </Row>
 
                     <Row className="justify-content-between">
-                      <Col xs={8} style={{ fontWeight: "bold" }}>
+                      <Col xs={9} style={{ fontWeight: "bold" }}>
                         EndoAVF Trial
                       </Col>
-                      <Col xs={4}>
+                      <Col xs={3}>
                         <small>
                           <i>2016-Present</i>
                         </small>
                       </Col>
                     </Row>
                     <Row>
-                      <Col className="ml-1 mb-2">
+                      <Col className="ml-1 mb-3">
                         Evaluating efficacy of percutaneous fistula creation
                         Enrollment to Summer 2019
                       </Col>
                     </Row>
                   </Card.Text>
-                  {/*
-                <Card.Link className="text-dark" href="/cv.pdf">
-                  Dr. Berland's CV
-                </Card.Link> */}
                 </Card.Body>
               </Card>
             </Col>
