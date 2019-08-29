@@ -22,7 +22,7 @@ class Contact extends Component {
             >
               <Map />
               <Card.Body>
-                <Row className="mt-4 justify-content-center">
+                <Row className="mt-4 justify-content-center p-2">
                   <p>
                     Dr. Berland is located inside NYU Langone Medical Center at:
                   </p>

@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Footer from './Footer';
-import Home from './Home';
 import Awareness from './Awareness';
 import Navigation from './Navigation';
 import Specialties from './Specialties';
@@ -26,7 +25,7 @@ class App extends Component {
           <ScrollToTop>
             <Navigation />
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={About} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/awareness" component={Awareness} />
               <Route exact path="/about" component={About} />
