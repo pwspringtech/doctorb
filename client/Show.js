@@ -8,6 +8,7 @@ import Image from 'react-bootstrap/Image';
 import TwitterDisplay from './TwitterDisplay';
 import ContactForm from './ContactForm';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
+import InstagramEmbed from 'react-instagram-embed';
 
 class Show extends Component {
   constructor() {
@@ -115,6 +116,24 @@ class Show extends Component {
               </Row>
               <Row className="mt-3 justify-content-center">
                 {this.state.formVisible ? <ContactForm /> : null}
+              </Row>
+              <Row>
+                <InstagramEmbed
+                  url="https://www.instagram.com/p/BzQL0IEHcWD/"
+                  maxWidth={320}
+                  hideCaption={false}
+                  containerTagName="div"
+                  protocol=""
+                  injectScript
+                  onLoading={() => {}}
+                  onSuccess={() => {
+                    console.log('success!');
+                  }}
+                  onAfterRender={() => {}}
+                  onFailure={() => {
+                    console.log('no insta!');
+                  }}
+                />
               </Row>
             </Col>
             <Row className="m-2">
