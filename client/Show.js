@@ -1,14 +1,15 @@
-import React, { Component, Fragment } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Carousel from 'react-bootstrap/Carousel';
-import ToggleButton from 'react-bootstrap/ToggleButton';
-import Image from 'react-bootstrap/Image';
-import TwitterDisplay from './TwitterDisplay';
-import ContactForm from './ContactForm';
-import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
-import InstagramEmbed from 'react-instagram-embed';
+import React, { Component, Fragment } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Carousel from "react-bootstrap/Carousel";
+import ToggleButton from "react-bootstrap/ToggleButton";
+import Image from "react-bootstrap/Image";
+import TwitterDisplay from "./TwitterDisplay";
+import ContactForm from "./ContactForm";
+import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
+import InstagramEmbed from "react-instagram-embed";
+import Instagram from "./InstaWidget";
 
 class Show extends Component {
   constructor() {
@@ -23,10 +24,10 @@ class Show extends Component {
       <Fragment>
         <Container
           className="d-flex flex-column p-3"
-          style={{ marginTop: '70px' }}
+          style={{ marginTop: "70px" }}
         >
           <Row className="justify-content-center p-3">
-            <Col xs={12} xl={6} className="pl-1 pr-1 mr-2">
+            <Col xs={12} xl={12} className="pl-1 pr-1 mr-2">
               <Row className="mb-3">
                 <Image
                   src="/show-pics/VascularSurgery-DrRadio-logo.png"
@@ -38,7 +39,7 @@ class Show extends Component {
               <Carousel>
                 <Carousel.Item>
                   <Image
-                    style={{ height: '350px' }}
+                    style={{ height: "350px" }}
                     className="d-block"
                     src="/show-pics/Todd-drradio.jpeg"
                     alt="First slide"
@@ -46,7 +47,7 @@ class Show extends Component {
                 </Carousel.Item>
                 <Carousel.Item>
                   <Image
-                    style={{ height: '350px' }}
+                    style={{ height: "350px" }}
                     className="d-block"
                     src="/show-pics/Todd-drradio-mic2.jpeg"
                     alt="Second slide"
@@ -54,7 +55,7 @@ class Show extends Component {
                 </Carousel.Item>
                 <Carousel.Item>
                   <Image
-                    style={{ height: '350px' }}
+                    style={{ height: "350px" }}
                     className="d-block"
                     src="/show-pics/operating.jpg"
                     alt="Third slide"
@@ -63,7 +64,7 @@ class Show extends Component {
               </Carousel>
 
               <Row
-                style={{ height: '40px' }}
+                style={{ height: "40px" }}
                 className="justify-content-start mt-3 mb-1 ml-4"
               >
                 <Image
@@ -81,7 +82,7 @@ class Show extends Component {
 
               <Row className="justify-content-center p-3">
                 <h5>
-                  Dr. Todd Berland{' '}
+                  Dr. Todd Berland{" "}
                   <small>
                     discusses vascular health as well as diseases of the
                     vascular system and how they are managed.
@@ -105,9 +106,9 @@ class Show extends Component {
                 >
                   <ToggleButton
                     style={{
-                      background: '#74b4ca',
-                      color: 'white',
-                      borderColor: '#74b4ca'
+                      background: "#74b4ca",
+                      color: "white",
+                      borderColor: "#74b4ca"
                     }}
                   >
                     send Dr. Todd Berland a message
@@ -117,30 +118,17 @@ class Show extends Component {
               <Row className="mt-3 justify-content-center">
                 {this.state.formVisible ? <ContactForm /> : null}
               </Row>
-              <Row>
-                <InstagramEmbed
-                  url="https://www.instagram.com/p/BzQL0IEHcWD/"
-                  maxWidth={320}
-                  hideCaption={false}
-                  containerTagName="div"
-                  protocol=""
-                  injectScript
-                  onLoading={() => {}}
-                  onSuccess={() => {
-                    console.log('success!');
-                  }}
-                  onAfterRender={() => {}}
-                  onFailure={() => {
-                    console.log('no insta!');
-                  }}
-                />
+            </Col>
+            <Col>
+              <Row className="m-2">
+                <Col xs={12} md={6} className="border shadow bg-white rounded">
+                  <Instagram />
+                </Col>
+                <Col xs={12} md={6} className="border shadow bg-white rounded">
+                  <TwitterDisplay twitterLoaded={false} />
+                </Col>
               </Row>
             </Col>
-            <Row className="m-2">
-              <Col xs={12} xl={12} className="border shadow bg-white rounded">
-                <TwitterDisplay twitterLoaded={false} />
-              </Col>
-            </Row>
           </Row>
         </Container>
       </Fragment>
