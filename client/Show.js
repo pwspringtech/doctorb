@@ -24,10 +24,9 @@ class Show extends Component {
       <Fragment>
         <Container
           className="justify-content-center"
-          // className="d-flex flex-column p-3"
           style={{ marginTop: '90px' }}
         >
-          <Row className="justify-content-center p-2">
+          <Row className="justify-content-center p-5">
             <Image
               src="/show-pics/VascularSurgery-DrRadio-logo.png"
               alt="Vascular Surgery Show"
@@ -43,7 +42,7 @@ class Show extends Component {
               src="/show-pics/Channel-110-grey.png"
               alt="Vascular Surgery Show"
               height="28px"
-              className="ml-2 pt-2"
+              className="ml-2 pt-1"
             />
           </Row>
           <Row className="justify-content-center p-3">
@@ -82,7 +81,7 @@ class Show extends Component {
               how they are managed. The Vacular Surgery Show is recorded
               bi-monthly and airs live on SiriusXM channel 110 every other
               Friday 6am-8am ET and re-airs Friday 4pm-6pm ET. On-Demand
-              episodes are also available via SiriusXM.
+              episodes available via SiriusXM.
             </p>
           </Row>
           <Row className="justify-content-center">
@@ -111,10 +110,10 @@ class Show extends Component {
           </Row>
 
           <Row className="m-2 ">
-            <Col xs={12} md={6}>
+            <Col xs={10} md={6}>
               <TwitterDisplay twitterLoaded={false} />
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={10} md={6}>
               <Instagram />
             </Col>
           </Row>
