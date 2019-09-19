@@ -8,7 +8,6 @@ import Image from 'react-bootstrap/Image';
 import TwitterDisplay from './TwitterDisplay';
 import ContactForm from './ContactForm';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
-// import InstagramEmbed from "react-instagram-embed";
 import Instagram from './InstaWidget';
 
 class Show extends Component {
@@ -26,7 +25,7 @@ class Show extends Component {
           className="justify-content-center"
           style={{ marginTop: '90px' }}
         >
-          <Row className="justify-content-center p-5">
+          <Row className="justify-content-center pl-5 pr-5 pb-2 pt-2">
             <Image
               src="/show-pics/VascularSurgery-DrRadio-logo.png"
               alt="Vascular Surgery Show"
