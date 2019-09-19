@@ -7,8 +7,8 @@ class Instagram extends React.Component {
     posts: []
   };
   componentDidMount() {
-    let token = "1644731014.1677ed0.89829179d8b144e1aaf978b28ac0689d";
-    let numPosts = 3;
+    let token = "280979272.1677ed0.d2297fdaf0214eada718c533d964ad06";
+    let numPosts = 2;
 
     axios
       .get(
@@ -49,7 +49,6 @@ class Instagram extends React.Component {
               }}
             />
           );
-          //   return <img key={image.id} src={image.images.thumbnail.url} />;
         })}
       </div>
     );

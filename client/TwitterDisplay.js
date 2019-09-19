@@ -36,7 +36,7 @@ class TwitterDisplay extends Component {
               className="twitter-timeline"
               href="https://twitter.com/VascularDr?ref_src=twsrc%5Etfw"
               data-width="400"
-              data-height="900"
+              data-height="1200"
             >
               Tweets by VascularDr
             </a>
