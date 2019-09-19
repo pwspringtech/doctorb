@@ -73,8 +73,8 @@ class Show extends Component {
             </Carousel>
           </Row>
 
-          <Row xl={6} className="justify-content-center px-5">
-            <p style={{ textIndent: 30 }}>
+          <Row className="justify-content-center px-5">
+            <p style={{ textIndent: 24 }}>
               <span style={{ fontSize: 24 }}>Dr. Todd Berland </span>
               discusses vascular health and diseases of the vascular system and
               how they are managed. The Vacular Surgery Show is recorded
