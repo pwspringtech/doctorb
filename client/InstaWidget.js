@@ -1,20 +1,20 @@
-import React from "react";
-import axios from "axios";
-import InstagramEmbed from "react-instagram-embed";
+import React from 'react';
+import axios from 'axios';
+import InstagramEmbed from 'react-instagram-embed';
 
 class Instagram extends React.Component {
   state = {
     posts: []
   };
   componentDidMount() {
-    let token = "280979272.1677ed0.d2297fdaf0214eada718c533d964ad06";
-    let numPosts = 2;
+    let token = '280979272.1677ed0.d2297fdaf0214eada718c533d964ad06';
+    let numPosts = 3;
 
     axios
       .get(
-        "https://api.instagram.com/v1/users/self/media/recent/?access_token=" +
+        'https://api.instagram.com/v1/users/self/media/recent/?access_token=' +
           token +
-          "&count=" +
+          '&count=' +
           numPosts
       )
       .then(res => {
@@ -41,11 +41,11 @@ class Instagram extends React.Component {
               injectScript
               onLoading={() => {}}
               onSuccess={() => {
-                console.log("success!");
+                console.log('success!');
               }}
               onAfterRender={() => {}}
               onFailure={() => {
-                console.log("no insta!");
+                console.log('no insta!');
               }}
             />
           );
