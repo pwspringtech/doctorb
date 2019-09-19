@@ -32,6 +32,7 @@ class TwitterDisplay extends Component {
       <Container>
         <Row>
           <Col xs md={12}>
+            {/* <Col xs md={12}> */}
             <a
               className="twitter-timeline"
               href="https://twitter.com/VascularDr?ref_src=twsrc%5Etfw"
