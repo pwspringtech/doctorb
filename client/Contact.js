@@ -11,7 +11,7 @@ class Contact extends Component {
   render() {
     return (
       <Container className="d-flex flex-column">
-        <Row className="pt-5 mt-3 mb-4 ml-1 mr-1">
+        <Row className="pt-5 mt-5 mb-4 ml-1 mr-1">
           <Col xs={12} md={6} className="mt-3">
             <Card
               className="shadow"
