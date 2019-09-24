@@ -1,10 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import Instagram from "./InstaWidget";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-ReactDOM.render(
-  //   <Instagram />,
-  <App />,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById('root'));
