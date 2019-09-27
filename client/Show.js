@@ -5,10 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import Image from 'react-bootstrap/Image';
-import TwitterDisplay from './TwitterDisplay';
 import ContactForm from './ContactForm';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
-import Instagram from './InstaWidget';
 
 class Show extends Component {
   constructor() {
@@ -108,14 +106,14 @@ class Show extends Component {
             {this.state.formVisible ? <ContactForm /> : null}
           </Row>
 
-          <Row className="m-2 ">
+          {/* <Row className="m-2 ">
             <Col xs={10} md={6}>
               <TwitterDisplay twitterLoaded={false} />
             </Col>
             <Col xs={10} md={6}>
               <Instagram />
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </Fragment>
     );

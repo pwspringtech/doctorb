@@ -31,12 +31,16 @@ class TwitterDisplay extends Component {
     return (
       <Container>
         <Row>
-          <Col xs md={12}>
+          <Col
+            md={12}
+            className="shadow"
+            style={{ border: `2px solid #74b4ca`, marginBottom: 10 }}
+          >
             <a
-              className="twitter-timeline"
+              className="twitter-timeline "
               href="https://twitter.com/VascularDr?ref_src=twsrc%5Etfw"
-              data-width="360"
-              data-height="1200"
+              data-width="320"
+              data-height="2600"
             >
               Tweets by VascularDr
             </a>

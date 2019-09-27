@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import InstagramEmbed from 'react-instagram-embed';
+import Row from 'react-bootstrap/Row';
 
 class Instagram extends React.Component {
   state = {
@@ -8,7 +9,7 @@ class Instagram extends React.Component {
   };
   componentDidMount() {
     let token = '280979272.1677ed0.d2297fdaf0214eada718c533d964ad06';
-    let numPosts = 3;
+    let numPosts = 4;
 
     axios
       .get(
@@ -31,23 +32,27 @@ class Instagram extends React.Component {
       <div className="instafeed">
         {this.state.posts.map(post => {
           return (
-            <InstagramEmbed
-              key={post.id}
-              url={post.link}
-              maxWidth={320}
-              hideCaption={false}
-              containerTagName="div"
-              protocol=""
-              injectScript
-              onLoading={() => {}}
-              onSuccess={() => {
-                console.log('success!');
-              }}
-              onAfterRender={() => {}}
-              onFailure={() => {
-                console.log('no insta!');
-              }}
-            />
+            <Row className="justify-content-center mb-3" key={post.id}>
+              <InstagramEmbed
+                style={{
+                  border: `2px solid #74b4ca`
+                }}
+                url={post.link}
+                maxWidth={350}
+                hideCaption={false}
+                containerTagName="div"
+                protocol=""
+                injectScript
+                onLoading={() => {}}
+                onSuccess={() => {
+                  console.log('success!');
+                }}
+                onAfterRender={() => {}}
+                onFailure={() => {
+                  console.log('no insta!');
+                }}
+              />
+            </Row>
           );
         })}
       </div>
