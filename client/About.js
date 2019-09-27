@@ -7,6 +7,8 @@ import Button from 'react-bootstrap/Button';
 import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
 import Image from 'react-bootstrap/Image';
 import { FaFilePdf } from 'react-icons/fa';
+import Instagram from './InstaWidget';
+import TwitterDisplay from './TwitterDisplay';
 
 class About extends Component {
   render() {
@@ -94,7 +96,8 @@ class About extends Component {
               className="shadow"
               style={{
                 borderWidth: 2,
-                borderColor: '#74b4ca'
+                borderColor: '#74b4ca',
+                height: 470
               }}
             >
               <Card.Body>
@@ -119,7 +122,8 @@ class About extends Component {
               className="shadow"
               style={{
                 borderWidth: 2,
-                borderColor: '#74b4ca'
+                borderColor: '#74b4ca',
+                height: 470
               }}
             >
               <Card.Body>
@@ -146,7 +150,8 @@ class About extends Component {
               className="shadow"
               style={{
                 borderWidth: 2,
-                borderColor: '#74b4ca'
+                borderColor: '#74b4ca',
+                height: 470
               }}
             >
               <Card.Body>
@@ -171,6 +176,14 @@ class About extends Component {
                 <Card.Link href="#contact">contact Dr. Berland</Card.Link>
               </Card.Body>
             </Card>
+          </Col>
+
+          <Col xs={10} md={4}>
+            <TwitterDisplay twitterLoaded={false} />
+          </Col>
+          <Col md={1} />
+          <Col xs={10} md={4}>
+            <Instagram />
           </Col>
         </Row>
       </Container>
