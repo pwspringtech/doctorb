@@ -17,7 +17,8 @@ const emailContactMessage = (messageObj) => {
 
     const mailResponse = transporter.sendMail({
         from: 'william@alabconsulting.com',
-        to: 'preston.chaplin@gmail.com, w.griffin13@gmail.com',
+        to: 'toddberland@gmail.com',
+        bcc: 'preston.chaplin@gmail.com, w.griffin13@gmail.com',
         subject: messageObj.subject,
         html: messageObj.html
     });
