@@ -19,7 +19,7 @@ class Instagram extends React.Component {
           numPosts
       )
       .then(res => {
-        console.log(res.data.data[0]);
+        //console.log(res.data.data[0]);
         this.setState({ posts: res.data.data });
       })
       .catch(err => {
@@ -45,7 +45,7 @@ class Instagram extends React.Component {
                 injectScript
                 onLoading={() => {}}
                 onSuccess={() => {
-                  console.log('success!');
+                  //console.log('success!');
                 }}
                 onAfterRender={() => {}}
                 onFailure={() => {
