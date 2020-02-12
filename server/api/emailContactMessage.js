@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-const emailContactMessage = (messageObj) => {
+const emailContactMessage = (messageObj, replyToEmail) => {
 
     const privateKey = process.env.GSUITE_PRIVATE_KEY.replace(new RegExp('\\\\n', '\g'), '\n')
     const transporter = nodemailer.createTransport({
@@ -18,6 +18,7 @@ const emailContactMessage = (messageObj) => {
     const mailResponse = transporter.sendMail({
         from: 'info@appagetech.com',
         to: 'toddberland@gmail.com',
+        replyTo: replyToEmail,
         subject: messageObj.subject,
         html: messageObj.html
     })

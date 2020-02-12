@@ -27,7 +27,7 @@ router.post('/messages', (req, res, next) => {
         .then(([user, created]) => {
             ContactMessage.create({userId: user.id, message})
                 .then(finalMessage => {
-                    emailContactMessage(formatUserMessageForEmail(req.body))
+                    emailContactMessage(formatUserMessageForEmail(req.body), email)
                     res.status(201).json(finalMessage)
                 })
                 .catch(next);
