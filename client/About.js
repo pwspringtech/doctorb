@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed';
-import Image from 'react-bootstrap/Image';
-import { FaFilePdf } from 'react-icons/fa';
+import React, { Component } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import ResponsiveEmbed from "react-bootstrap/ResponsiveEmbed";
+import Image from "react-bootstrap/Image";
+import { FaFilePdf } from "react-icons/fa";
 
 class About extends Component {
   render() {
@@ -25,19 +25,19 @@ class About extends Component {
                 href="/cv.pdf"
                 className="mt-4"
                 style={{
-                  background: '#74b4ca',
-                  color: 'white',
-                  borderColor: '#74b4ca'
+                  background: "#74b4ca",
+                  color: "white",
+                  borderColor: "#74b4ca"
                 }}
               >
-                <Col style={{ fontSize: '18px' }}>
+                <Col style={{ fontSize: "18px" }}>
                   Curriculum Vitae {<FaFilePdf className="mb-1 ml-1" />}
                 </Col>
               </Button>
             </Row>
           </Col>
           <Col className="mt-2 p-4">
-            <p style={{ textIndent: '40px' }} className="lead">
+            <p style={{ textIndent: "40px" }} className="lead">
               Dr. Berland is a world renowned vascular surgeon based in New York
               City. He is listed in Castle Connolly “America’s Top Doctors” for
               2019 and has been a member of Alpha Omega Alpha, America’s top
@@ -47,7 +47,7 @@ class About extends Component {
               Show” on Sirius/XM‘s Doctor Radio (Channel 110), which airs live
               bi-weekly on Fridays from 6-8am.
             </p>
-            <p style={{ textIndent: '40px' }} className="lead">
+            <p style={{ textIndent: "40px" }} className="lead">
               Dr. Berland obtained his degree from the Medical College of
               Georgia in 2003 and completed his General Surgery residency at
               Mayo Clinic in 2008, where, as Chief Resident, he was awarded a
@@ -66,42 +66,19 @@ class About extends Component {
         </Row>
 
         <Row className="justify-content-center mt-3">
-          <Col xl="10">
-            <ResponsiveEmbed
-              aspect="16by9"
-              style={{
-                position: 'relative',
-                paddingBottom: '56.25%',
-                height: 0
-              }}
-            >
-              <video
-                controls
-                poster="/vidPoster.png"
-                type="video/mp4"
-                src="/Todd-Berland-MD.mp4"
-                style={{
-                  position: 'absolute',
-                  top: 0,
-                  left: 0
-                }}
-              />
-            </ResponsiveEmbed>
-          </Col>
-
           <Col xs={12} xl={4} className="pt-4 pb-2">
             <Card
               className="shadow"
               style={{
                 borderWidth: 2,
-                borderColor: '#74b4ca'
+                borderColor: "#74b4ca"
               }}
             >
               <Card.Body>
                 <Card.Img variant="top" src="/show-pics/operating.jpg" />
 
                 <h4 className="mt-2"> Chance Favors the Prepared</h4>
-                <p style={{ fontSize: '14px' }}>
+                <p style={{ fontSize: "14px" }}>
                   <i>by Danielle Wong Moores</i>
                 </p>
                 <Card.Text>
@@ -119,14 +96,14 @@ class About extends Component {
               className="shadow"
               style={{
                 borderWidth: 2,
-                borderColor: '#74b4ca'
+                borderColor: "#74b4ca"
               }}
             >
               <Card.Body>
                 <Row className="justify-content-center mb-3">
                   <h4 className="mt-2"> Available for Expert Work</h4>
                 </Row>
-                <Card.Text style={{ textIndent: '20px' }}>
+                <Card.Text style={{ textIndent: "20px" }}>
                   Dr. Berland's expertise in vascular disease and treatments has
                   lead to being sought out to provide expert opinion in legal
                   cases. He is available for both plaintiff and defense side
@@ -146,14 +123,14 @@ class About extends Component {
               className="shadow"
               style={{
                 borderWidth: 2,
-                borderColor: '#74b4ca'
+                borderColor: "#74b4ca"
               }}
             >
               <Card.Body>
                 <Row className="justify-content-center mb-3">
                   <h4 className="mt-2"> Available, Affable & Able</h4>
                 </Row>
-                <Card.Text style={{ textIndent: '20px' }}>
+                <Card.Text style={{ textIndent: "20px" }}>
                   "In addition to diagnosing and treating people with venous
                   disease, aortic disease, thoracic disease, and other
                   conditions, I connect with my patients and try to relate to
