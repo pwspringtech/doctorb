@@ -1,36 +1,36 @@
 /* eslint-disable complexity */
 /* eslint-disable default-case */
-import React from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
-import InputGroup from "react-bootstrap/InputGroup";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import { Formik } from "formik";
-import * as Yup from "yup";
-import { Link } from "react-router-dom"
-import axios from "axios";
-import ContactFormSendPopup from "./ContactFormSendPopup";
+import React from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { Formik } from 'formik';
+import * as Yup from 'yup';
+import { Link } from 'react-router-dom'
+import axios from 'axios';
+import ContactFormSendPopup from './ContactFormSendPopup';
 
 const ContactSchema = Yup.object().shape({
   firstName: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
+    .min(2, 'Too Short!')
+    .max(50, 'Too Long!')
+    .required('Required'),
   lastName: Yup.string()
-    .min(2, "Too Short!")
-    .max(50, "Too Long!")
-    .required("Required"),
-  phone: Yup.string().min(10, "Invalid phone number"),
+    .min(2, 'Too Short!')
+    .max(50, 'Too Long!')
+    .required('Required'),
+  phone: Yup.string().min(10, 'Invalid phone number'),
   email: Yup.string()
-    .email("Invalid email")
-    .required("Required"),
+    .email('Invalid email')
+    .required('Required'),
   message: Yup.string()
-    .min(2, "Too Short!")
-    .required("Required"),
-  terms: Yup.boolean().oneOf([true], "Field must be checked")
+    .min(2, 'Too Short!')
+    .required('Required'),
+  terms: Yup.boolean().oneOf([true], 'Field must be checked')
 });
 
 export default function ContactForm() {
@@ -41,7 +41,7 @@ export default function ContactForm() {
       className="shadow"
       style={{
         borderWidth: 2,
-        borderColor: "#74b4ca"
+        borderColor: '#74b4ca'
       }}
     >
       <ContactFormSendPopup
@@ -68,15 +68,15 @@ export default function ContactForm() {
               onSubmit={(values, actions) => {
                 // Send values to server API
                 axios
-                  .post("/api/users/messages", values)
+                  .post('/api/users/messages', values)
                   .then(message => {
                     actions.setSubmitting(false);
                     actions.resetForm({
-                      message: "",
-                      firstName: "",
-                      lastName: "",
-                      email: "",
-                      phone: "",
+                      message: '',
+                      firstName: '',
+                      lastName: '',
+                      email: '',
+                      phone: '',
                       terms: false
                     });
                     setModalShow(true);
@@ -84,7 +84,7 @@ export default function ContactForm() {
                   .catch(error => {
                     actions.setSubmitting(false);
                     actions.setErrors(error);
-                    actions.setStatus({ msg: "Could not send message" });
+                    actions.setStatus({ msg: 'Could not send message' });
                   });
               }}
               render={({

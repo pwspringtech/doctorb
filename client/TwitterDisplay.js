@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 class TwitterDisplay extends Component {
   loadTwitter() {
-    console.log('Use Load twitter');
+    //console.log('Use Load twitter');
     window.twttr = (function(d, s, id) {
       let js,
         fjs = d.getElementsByTagName(s)[0],
@@ -23,7 +23,7 @@ class TwitterDisplay extends Component {
   }
 
   componentDidMount() {
-    console.log('load');
+    //console.log('load');
     this.loadTwitter();
   }
 
@@ -31,12 +31,16 @@ class TwitterDisplay extends Component {
     return (
       <Container>
         <Row>
-          <Col xs md={12}>
+          <Col
+            md={12}
+            className="shadow"
+            style={{ border: `2px solid #74b4ca`, marginBottom: 10 }}
+          >
             <a
-              className="twitter-timeline"
+              className="twitter-timeline "
               href="https://twitter.com/VascularDr?ref_src=twsrc%5Etfw"
-              data-width="400"
-              data-height="900"
+              data-width="320"
+              data-height="2600"
             >
               Tweets by VascularDr
             </a>

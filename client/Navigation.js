@@ -1,78 +1,78 @@
 import React, { Component, Fragment } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Row from 'react-bootstrap/Row';
 
 class Navigation extends Component {
   render() {
     return (
       <Fragment>
-        <Row style={{ marginBottom: '20px' }}>
-          <Navbar
-            fixed="top"
-            expand="md"
-            collapseOnSelect
-            style={{
-              borderStyle: 'solid',
-              borderWidth: '2px 0px 2px 0px',
-              borderColor: '#74b4ca',
-              padding: 0,
-              paddingRight: 5,
-              paddingLeft: 5,
-              backgroundColor: '#f5f5f5',
-              fontSize: 18
-            }}
-          >
-            <Container>
-              <Navbar.Brand href="#about">
-                <img
-                  src="/ToddBerlandMD_logo.png"
-                  height="70px"
-                  alt="Tood Berland, MD - Vascular Specialists"
-                />
-              </Navbar.Brand>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav
-                  className="justify-content-center"
-                  justify
-                  style={{
-                    fontFamily: 'serenity, sans-serif',
-                    fontWeight: 500,
-                    fontStyle: 'normal'
-                  }}
-                >
-                  <Nav.Item>
-                    <Nav.Link href="#about">About</Nav.Link>
-                  </Nav.Item>
-
-                  <Nav.Item>
-                    <Nav.Link href="#specialties">Specialties</Nav.Link>
-                  </Nav.Item>
-
-                  <Nav.Item>
-                    <Nav.Link href="#publications">
-                      Research & Publications
-                    </Nav.Link>
-                  </Nav.Item>
-
-                  <Nav.Item>
-                    <Nav.Link href="#awareness">Patient Awareness</Nav.Link>
-                  </Nav.Item>
-
-                  <Nav.Item>
-                    <Nav.Link href="#show">Sirius XM Show</Nav.Link>
-                  </Nav.Item>
-
-                  <Nav.Item>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
-                  </Nav.Item>
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar>
-        </Row>
+        <nav
+          className="navbar fixed-top navbar-expand-lg  navbar-light bg-light"
+          style={{
+            borderStyle: 'solid',
+            borderWidth: '2px 0px 2px 0px',
+            borderColor: '#74b4ca',
+            padding: 0,
+            paddingRight: 5,
+            paddingLeft: 5,
+            // backgroundColor: '#f5f5f5',
+            fontSize: 18,
+            marginBottom: 20
+          }}
+        >
+          <div className="container">
+            <a className="navbar-brand" href="#about">
+              <img
+                src="/ToddBerlandMD_logo.png"
+                height="70px"
+                alt="Tood Berland, MD - Vascular Specialists"
+              />
+            </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon" />
+            </button>
+            <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul className="navbar-nav">
+                <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <a className="nav-link" href="#about">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <a className="nav-link" href="#specialties">
+                    Specialties
+                  </a>
+                </li>
+                <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <a className="nav-link" href="#publications">
+                    Research & Publications
+                  </a>
+                </li>
+                <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <a className="nav-link" href="#awareness">
+                    Patient Awareness
+                  </a>
+                </li>
+                <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <a className="nav-link" href="#show">
+                    Sirius XM Show
+                  </a>
+                </li>
+                <li className="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+                  <a className="nav-link" href="#contact">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </Fragment>
     );
   }
