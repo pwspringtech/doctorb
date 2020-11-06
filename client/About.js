@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import ResponsiveEmbed from "react-bootstrap/ResponsiveEmbed";
+// import ResponsiveEmbed from "react-bootstrap/ResponsiveEmbed";
 import Image from "react-bootstrap/Image";
 import { FaFilePdf } from "react-icons/fa";
 import Instagram from "./InstaWidget";

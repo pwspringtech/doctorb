@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 
 class TwitterDisplay extends Component {
   loadTwitter() {
-    //console.log('Use Load twitter');
     window.twttr = (function(d, s, id) {
       let js,
         fjs = d.getElementsByTagName(s)[0],
@@ -30,7 +29,7 @@ class TwitterDisplay extends Component {
   render() {
     return (
       <Container>
-        <Row>
+        <Row style={{ justifyContent: 'center'}}>
           <Col
             md={12}
             className="shadow"
