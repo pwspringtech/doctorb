@@ -153,7 +153,6 @@ class About extends Component {
               </Card.Body>
             </Card>
           </Col>
-
           <Col xs={10} md={4}>
             <TwitterDisplay twitterLoaded={false} />
           </Col>
