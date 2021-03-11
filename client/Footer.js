@@ -56,10 +56,10 @@ class Footer extends Component {
                   style={{ height: 40, width: 40 }}
                   className="ml-2 mr-2"
                 />
-                <SocialIcon
+                {/* <SocialIcon
                   url="https://www.instagram.com/thevasculardr/"
                   style={{ height: 40, width: 40 }}
-                />
+                /> */}
               </Col>
               <Col sm className="mt-5">
                 <Link to="/specialties" className="text-dark">

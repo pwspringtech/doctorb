@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import { FaFilePdf } from "react-icons/fa";
-import Instagram from "./InstaWidget";
+// import Instagram from "./InstaWidget";
 import TwitterDisplay from "./TwitterDisplay";
 
 class About extends Component {
@@ -156,10 +156,6 @@ class About extends Component {
 
           <Col xs={10} md={4}>
             <TwitterDisplay twitterLoaded={false} />
-          </Col>
-          <Col md={1} />
-          <Col xs={10} md={4}>
-            <Instagram />
           </Col>
         </Row>
       </Container>
