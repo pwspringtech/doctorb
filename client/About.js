@@ -8,6 +8,7 @@ import Image from "react-bootstrap/Image";
 import { FaFilePdf } from "react-icons/fa";
 // import Instagram from "./InstaWidget";
 import TwitterDisplay from "./TwitterDisplay";
+import ErrorBoundary from "./ErrorBoundary"
 
 class About extends Component {
   render() {
@@ -155,6 +156,12 @@ class About extends Component {
           </Col>
           <Col xs={10} md={4}>
             <TwitterDisplay twitterLoaded={false} />
+          </Col>
+          <Col md={1} />
+          <Col xs={10} md={4}>
+            <ErrorBoundary>
+            <Instagram />
+            </ErrorBoundary>
           </Col>
         </Row>
       </Container>
