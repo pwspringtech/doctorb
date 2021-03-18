@@ -157,12 +157,12 @@ class About extends Component {
           <Col xs={10} md={4}>
             <TwitterDisplay twitterLoaded={false} />
           </Col>
-          <Col md={1} />
+          {/* <Col md={1} />
           <Col xs={10} md={4}>
             <ErrorBoundary>
             <Instagram />
             </ErrorBoundary>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     );
