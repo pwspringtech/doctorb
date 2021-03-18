@@ -22,7 +22,7 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       // You can render any custom fallback UI
-      return <h3>An error is preventing the Instagram feed from rendering </h3>;
+      return <p style={{ color: 'white'}}>Instagram feed unavailable</p>;
     }
 
     return this.props.children;
