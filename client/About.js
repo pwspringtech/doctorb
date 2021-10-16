@@ -41,8 +41,8 @@ class About extends Component {
           <Col className="mt-2 p-4">
             <p style={{ textIndent: "40px" }} className="lead">
               Dr. Berland is a world renowned vascular surgeon based in New York
-              City. He is listed in Castle Connolly “America’s Top Doctors” for
-              2019 and has been a member of Alpha Omega Alpha, America’s top
+              City. He is listed in Castle Connolly “America’s Top Doctors” and 
+              has been a member of Alpha Omega Alpha, America’s top
               Medical Society, since 2003. Dr. Berland is published extensively
               and is the principal investigator for several ongoing research
               trials. Dr. Berland is also the host of the “Vascular Surgery
